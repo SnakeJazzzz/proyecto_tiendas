@@ -1,0 +1,2590 @@
+{
+  " Blvd. Industrial, El Colorin Norte, Uruapan, Uruapan, Michoacán de Ocampo, 60120, México": {
+    "lat": null,
+    "lon": null
+  },
+  "3ER ANILLO PERIFERICO NORTE, Bugambilias, Colima, Colima, Colima, 28017, México": {
+    "lat": null,
+    "lon": null
+  },
+  "4TA AV SUR PROLONG C LAS PALOMAS, Cantarranas, TAPACHULA DE CÓRDOVA Y ORDÓÑEZ, Tapachula de Córdova y Ordóñez, Chiapas, 30797, México": {
+    "lat": null,
+    "lon": null
+  },
+  "05 DE MAYO, Centro, León, León de los Aldama, Guanajuato, 37000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "12 DE OCTUBRE, Los Sauces, Celaya, Celaya, Guanajuato, 38027, México": {
+    "lat": 20.533795125699353,
+    "lon": -100.83526851726776
+  },
+  "16 DE SEPTIEMBRE, Zona Central, La Paz, La Paz, Baja California Sur, 23000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "25 DE JULIO, Centro, La Piedad, La Piedad de Cabadas, Michoacán de Ocampo, 59300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "ABRAHAM BANDALA, Cárdenas Centro, Cárdenas, Cárdenas, Tabasco, 86500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "ADUANA, Tampico Centro, Tampico, Tampico, Tamaulipas, 89000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "ALLENDE, Saltillo Centro, Saltillo, Saltillo, Coahuila de Zaragoza, 25000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AUTOP ADOLFO RUIZA CORTINEZ, Progreso Macuiltepetl, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AUTOP MEXICO CUERNAVACA KM 87.850, Ricardo Flores Magón, Cuernavaca, Cuernavaca, Morelos, 62370, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AUTOP MEXICO- ACAPULCO KM 73+573, Ricardo Flores Magón, Cuernavaca, Cuernavaca, Morelos, 62370, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AUTOP MEXICO- ACAPULCOKM 8750, Flores Magón 2a Fracción, Cuernavaca, Cuernavaca, Morelos, 62373, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AUTOP MEXICO-PACHUCA, Privada Santa Prisca, Pachuca de Soto, Pachuca de Soto, Hidalgo, 42083, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 1 DE MAYO, Elite Plaza, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 4 A NORTE PONIENTE, Candelaria, Comitán de Domínguez, Comitán de Domínguez, Chiapas, 30060, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 4TA AVENIDA, Rey Nezahualcóyotl, Nezahualcóyotl, Ciudad Nezahualcóyotl, Estado de México, 57809, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 5 A NORTE PONIENTE, Santo Domingo, Tuxtla Gutiérrez, Tuxtla Gutiérrez, Chiapas, 29000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 5 DE FEBRERO SUR, Los Virreyes, Querétaro, Santiago de Querétaro, Querétaro, 76175, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 6 NORTE, Obrera, Poza Rica de Hidalgo, Poza Rica de Hidalgo, Veracruz de Ignacio de la Llave, 93260, México": {
+    "lat": 20.52686869324391,
+    "lon": -97.46084978005017
+  },
+  "AV 16 DE SEPTIEMBRE, Guadalajara Centro, Guadalajara, Guadalajara, Jalisco, 44100, México": {
+    "lat": 20.67083,
+    "lon": -103.3474
+  },
+  "AV 16 DE SEPTIEMBRE, San Miguel Zinacantepec, Zinacantepec, Tezoyuca, Estado de México, 51350, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV 21 AUTOPISTA CORDOBA ORIZABA, Córdoba Centro, Córdoba, Córdoba, Veracruz de Ignacio de la Llave, 94500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ABRAHAM LINCOLN, Hacienda Santa Clara, Monterrey, Monterrey, Nuevo León, 64346, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ACOXPA, Vergel de Coyoacán, Tlalpan, Ciudad de México, Ciudad de México, 14340, México": {
+    "lat": 19.297564749328963,
+    "lon": -99.13717496875807
+  },
+  "AV ADOLFO  RUIZ  CORTINES , Las Giraldas, Centro, Villahermosa, Tabasco, 86038, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ADOLFO LOPEZ MATEOS, Italia Providencia, Guadalajara, Guadalajara, Jalisco, 44648, México": {
+    "lat": 20.68956665,
+    "lon": -103.3773704
+  },
+  "AV ADOLFO RUIZ CORTINEZ, Cosamaloapan de Carpio Centro, Cosamaloapan de Carpio, Cosamaloapan, Veracruz de Ignacio de la Llave, 95400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ALCANFORES, Jardines de San Mateo, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53240, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ALEJANDRO DE RODAS, Las Cumbres, Monterrey, Monterrey, Nuevo León, 64610, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ALEJANDRO DUMAS, Chihuahua 2000 I Etapa, Chihuahua, Chihuahua, Chihuahua, 31136, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ALFREDO DEL MAZO, La Cruz Comalco, Toluca, Toluca de Lerdo, Estado de México, 50010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ALTA TENSION Y RIO BALSAS, Lomas de Miraval, Cuernavaca, Cuernavaca, Morelos, 62270, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ANDRES QUINTANA ROO, Supermanzana 5 Centro, Benito Juárez, Cancún, Quintana Roo, 77500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ANFORA, Azteca, Venustiano Carranza, Ciudad de México, Ciudad de México, 15320, México": {
+    "lat": 19.437922709751533,
+    "lon": -99.11054639616883
+  },
+  "AV ANILLO VIAL FRAY JUNIPERO CERRA, Paseo San Junípero, Querétaro, Santiago de Querétaro, Querétaro, 76146, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ANTONIO ROSALES, Centro, Culiacán, Culiacán Rosales, Sinaloa, 80000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV APOLO Y REFORMA, Jardines de la Alameda, Mazatlán, Mazatlán, Sinaloa, 82123, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ARBOLEDAS, Morelos, Irapuato, Irapuato, Guanajuato, 36520, México": {
+    "lat": 20.67197922854458,
+    "lon": -101.37076355747992
+  },
+  "AV ARBOLEDAS, San Pedro, Irapuato, Irapuato, Guanajuato, 36520, México": {
+    "lat": 20.67197922854458,
+    "lon": -101.37076355747992
+  },
+  "AV ATENAS, Revolución, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91100, México": {
+    "lat": 19.565732655508736,
+    "lon": -96.91285271208812
+  },
+  "AV ATENAS, Valle Dorado, Tlalnepantla de Baz, Tlalnepantla de Baz, Estado de México, 54020, México": {
+    "lat": 19.5506334877197,
+    "lon": -99.2103815701916
+  },
+  "AV AVIACION, CARRETERA A PUERTO CARMEN, Ciudad del Carmen (Ciudad del Carmen), Carmen, Ciudad del Carmen, Campeche, 24119, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV AVILA CAMACHO, Jacarandas, Zapopan, Zapopan, Jalisco, 45160, México": {
+    "lat": 20.716622391958772,
+    "lon": -103.38202393731157
+  },
+  "AV AZCAPOTZALCO, Centro de Azcapotzalco, Azcapotzalco, Ciudad de México, Ciudad de México, 02000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV BENITO JUAREZ, Estrella de Oriente, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78396, México": {
+    "lat": 22.130738648695136,
+    "lon": -100.92584426295893
+  },
+  "AV BENITO JUAREZ, Fresnillo Centro, Fresnillo, Fresnillo, Zacatecas, 99000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV BENITO JUAREZ ENTRE AV 8 DE OCTUBRE Y 70 AV NORTE, Emiliano Zapata, Cozumel, Cozumel, Quintana Roo, 77620, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV BORDO DE XOCHIACA, Benito Juárez (La Aurora), Nezahualcóyotl, Ciudad Nezahualcóyotl, Estado de México, 57000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV BORDO DE XOCHIACA, Ciudad Jardín, Nezahualcóyotl, Ciudad Nezahualcóyotl, Estado de México, 57205, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CALIFORNIA, Urbanizable 2, Cajeme, Ciudad Obregón, Sonora, 85000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CAMINO AL MOLINO DE LAS FLORES, Valle de Santa Cruz, Texcoco, Texcoco de Mora, Estado de México, 56120, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CAMINO REAL DE L APLATA, Media Luna, Pachuca de Soto, Pachuca de Soto, Hidalgo, 42080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CANAL DE MIRAMONTES, Avante, Coyoacán, Ciudad de México, Ciudad de México, 04460, México": {
+    "lat": 19.329256342196675,
+    "lon": -99.13710973207961
+  },
+  "AV CANAL DE TEZONTLE, Dr. Alfonso Ortiz Tirado, Iztapalapa, Ciudad de México, Ciudad de México, 09020, México": {
+    "lat": 19.381660844417873,
+    "lon": -99.08142551712677
+  },
+  "AV CANAL RIO CHURUBUSCO, Central de Abasto, Iztapalapa, Ciudad de México, Ciudad de México, 09040, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CARLOS HANK GONZALEZ, Jardines de Aragón, Ecatepec de Morelos, Ecatepec de Morelos, Estado de México, 55140, México": {
+    "lat": 19.516150783226898,
+    "lon": -99.03602905207644
+  },
+  "AV CARR PANAMERICANA, Centro, San Juan del Río, San Juan del Rio, Querétaro, 76800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CATARINO GONZALEZ, Guadalupe Rhon de Hank, Tianguistenco, Tezoyuca, Estado de México, 52600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CENTRAL PTE, Santo Domingo, Tuxtla Gutiérrez, Tuxtla Gutiérrez, Chiapas, 29000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CIRCUMBALACION, Lago del Ángel Residencial, Orizaba, Orizaba, Veracruz de Ignacio de la Llave, 94330, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CIRCUNVALACION, Oblatos, Guadalajara, Guadalajara, Jalisco, 44700, México": {
+    "lat": 20.691489722809184,
+    "lon": -103.30897729526724
+  },
+  "AV COLECTORES 13, Magdalena de las Salinas, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07760, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV COLEGIO, Hidalgo del Parral Centro, Hidalgo del Parral, Hidalgo del Parral, Chihuahua, 33800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CONCORDIA, Los Ébanos, Apodaca, Ciudad Apodaca, Nuevo León, 66612, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CONSTITUCION, Zona Centro, Tijuana, Tijuana, Baja California, 22000, México": {
+    "lat": 32.52651505071543,
+    "lon": -117.03753519356427
+  },
+  "AV CONSTITUYENTES, Santa Cruz, Matamoros, Heroica Matamoros, Tamaulipas, 87315, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CONSTITUYENTES ORIENTE, Observatorio, Querétaro, Santiago de Querétaro, Querétaro, 76040, México": {
+    "lat": 20.586663147715093,
+    "lon": -100.37819126715699
+  },
+  "AV CORREGIDORA, FOVISSSTE, Carmen, Ciudad del Carmen, Campeche, 24199, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CORREGIDORA S/N, Ciudad del Carmen (Ciudad del Carmen), Carmen, Ciudad del Carmen, Campeche, 24119, México": {
+    "lat": 18.65524757351413,
+    "lon": -91.81062898280072
+  },
+  "AV CUAHUTEMOC, Narvarte Poniente, Benito Juárez, Ciudad de México, Ciudad de México, 03020, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV CUAUHTEMOC, Piedad Narvarte, Benito Juárez, Ciudad de México, Ciudad de México, 03000, México": {
+    "lat": 19.402859699632184,
+    "lon": -99.1555599092747
+  },
+  "AV DE LA MARINA, Puerta al Mar, Mazatlán, Mazatlán, Sinaloa, 82103, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV DE LAS TORRES, Cerradas San Mateo, Juárez, Juárez, Chihuahua, 32575, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV DE LOS INSURGENTES, Los Llanitos, Tepic, Tepic, Nayarit, 63170, México": {
+    "lat": 21.492513178967076,
+    "lon": -104.88075987457665
+  },
+  "AV DEL DELFIN, Mar de Cortes, Mazatlán, Mazatlán, Sinaloa, 82130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV DEL IMAN, Pedregal de Carrasco, Coyoacán, Ciudad de México, Ciudad de México, 04700, México": {
+    "lat": 19.308504051863327,
+    "lon": -99.17852733059536
+  },
+  "AV DEL PEÑON, Moctezuma 2a Sección, Venustiano Carranza, Ciudad de México, Ciudad de México, 15530, México": {
+    "lat": 19.439856952393658,
+    "lon": -99.09081495175084
+  },
+  "AV DEL ROSARIO, El Rosario, Azcapotzalco, Ciudad de México, Ciudad de México, 02100, México": {
+    "lat": 19.498227737567177,
+    "lon": -99.19343631924272
+  },
+  "AV DIAGONAL HERMANOS PANIAGUA, San Ramón, San Cristóbal de las Casas, San Cristóbal de las Casas, Chiapas, 29240, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV DOCTOR JIMENEZ CANTU, Generalísimo José María Morelos Y Pavón Sección Sur, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54750, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV EGIPTO, Clavería, Azcapotzalco, Ciudad de México, Ciudad de México, 02080, México": {
+    "lat": 19.463826766448815,
+    "lon": -99.1837138090899
+  },
+  "AV EJE 1 NORTE MOSQUETA, Buenavista, Cuauhtémoc, Ciudad de México, Ciudad de México, 06350, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV EJERCITO MEXICANO, Primavera, Tampico, Tampico, Tamaulipas, 89130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV EJERCITO MEXICANO, Tampico, Tampico, Tampico, Tamaulipas, 89137, México": {
+    "lat": 22.2505922300892,
+    "lon": -97.86358479810323
+  },
+  "AV EJERCITO NACIONAL, Granada, Miguel Hidalgo, Ciudad de México, Ciudad de México, 11520, México": {
+    "lat": 19.438003523376945,
+    "lon": -99.19349332242771
+  },
+  "AV EJERCITO NACIONAL Y TECNOLOGICO, Del Márquez, Juárez, Juárez, Chihuahua, 32607, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV EL COYOL, Nueva Atzacoalco, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07420, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ENRIQUE RAMIREZ MIGUEL, Américas Britania, Morelia, Morelia, Michoacán de Ocampo, 58270, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ENRIQUEZ, Xalapa Enríquez Centro, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91000, México": {
+    "lat": 19.5275159897866,
+    "lon": -96.92146697554719
+  },
+  "AV FCO MEDINA, Educación, Puerto Vallarta, Puerto Vallarta, Jalisco, 48338, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV FELIPE BENAVIDES, Vista Hermosa, Monterrey, Monterrey, Nuevo León, 64620, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV FRANCISCO CANAL, Veracruz Centro, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV FRANCISCO G SALINAS, Tahona, Zacatecas, Zacatecas, Zacatecas, 98097, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV FRANCISCO I MADERO, Chilpancingo de los Bravos Centro, Chilpancingo de los Bravo, Chilpancingo de los Bravo, Guerrero, 39000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV FRANCISCO I. MADERO, San Andres Tuxtla Centro, San Andrés Tuxtla, San Andrés Tuxtla, Veracruz de Ignacio de la Llave, 95700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GALERIA TECNOLOGICO ES TORRES LANDA, Del Parque, Celaya, Celaya, Guanajuato, 38010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GARCIA MORALES, Sonora Progresista, Navojoa, Navojoa, Sonora, 85890, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GENERAL ALVARO OBREGON, Montebello Sección Dalí, Culiacán, Culiacán Rosales, Sinaloa, 80227, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GOBERNADORES, La Paz, Campeche, San Francisco de Campeche, Campeche, 24050, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GRAL. LAURO VILLAR, Villas del Río, Matamoros, Heroica Matamoros, Tamaulipas, 87400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GUADALUPE VICTORIA S/N, San Miguel, Metepec, Metepec, Estado de México, 52140, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV GUERRERO, Nuevo Laredo Centro, Nuevo Laredo, Nuevo Laredo, Tamaulipas, 88000, México": {
+    "lat": 27.49341745,
+    "lon": -99.50747575
+  },
+  "AV GUSTAVO BAZ, San Juan, Zumpango, Zumpango, Estado de México, 55600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HACIENDA PEÑUELAS, Cerradas de Cumbres, Monterrey, Monterrey, Nuevo León, 64349, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HANK GONZALEZ, Las Américas, Ecatepec de Morelos, Ecatepec de Morelos, Estado de México, 55076, México": {
+    "lat": 19.577086353359967,
+    "lon": -99.02477546218452
+  },
+  "AV HDA. DE EMILIANO ZAPATA, Colón Echegaray, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HIDALGO, Ciudad Valles Centro, Ciudad Valles, Ciudad Valles, San Luis Potosí, 79000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HIDALGO, Minatitlan Centro, Minatitlán, Minatitlán, Veracruz de Ignacio de la Llave, 96700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HIDALGO OTE, Ciudad Acuña Centro, Acuña, Ciudad Acuña, Coahuila de Zaragoza, 26200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HUEHUETOCA, Jardines de la Hacienda Sur, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54720, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HUEHUETOCA, Tres de Mayo, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54760, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV HUMBERTO LOBO, San Pedro Garza García Centro, San Pedro Garza García, San Pedro Garza García, Nuevo León, 66200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV IGNACIO ALLENDE, Ciudad Cuauhtémoc Centro, Cuauhtémoc, Cuauhtémoc, Chihuahua, 31500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV IGNACIO ALLENDE, Ixtapan de la Sal, Ixtapan de la Sal, Tezoyuca, Estado de México, 51900, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INDEPENDENCIA, Oaxaca Centro, Oaxaca de Juárez, Oaxaca de Juárez, Oaxaca, 68000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INDEPENDENCIA, Primer Cuadro (Centro), Ahome, Los Mochis, Sinaloa, 81200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INDEPENDENCIA, Tehuacán Centro, Tehuacán, Tehuacán, Puebla, 75700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INDUSTRIAL, Lomas del Mirador, Piedras Negras, Piedras Negras, Coahuila de Zaragoza, 26070, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INGENIEROS, Santiago, Valle de Chalco Solidaridad, Valle de Chalco Solidaridad, Estado de México, 56615, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INSURGENTES, Villas del Estero, Mazatlán, Mazatlán, Sinaloa, 82156, México": {
+    "lat": 23.23299154103588,
+    "lon": -106.40837519241599
+  },
+  "AV INSURGENTES KM 5.025, Maya Real, Othón P. Blanco, Chetumal, Quintana Roo, 77084, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV INSURGENTES SUR, Santa Úrsula Xitla, Tlalpan, Ciudad de México, Ciudad de México, 14420, México": {
+    "lat": 19.28403515182822,
+    "lon": -99.17571763225297
+  },
+  "AV INSURGENTES Y L. CARDENAS, Jorge Almada, Culiacán, Culiacán Rosales, Sinaloa, 80200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JOSE LOPEZ PORTILLO, Santa María Magdalena Huizachitla, Coacalco de Berriozábal, Coacalco de Berriozabal, Estado de México, 55715, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JOSE VASCONCELOS, Jardines Del Valle, San Pedro Garza García, San Pedro Garza García, Nuevo León, 66220, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JUAN DE LA LUZ ENRRIQUE, La Palma, Acayucan, Acayucan, Veracruz de Ignacio de la Llave, 96056, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JUAN PABLO II, 3 Estrellas, La Piedad, La Piedad de Cabadas, Michoacán de Ocampo, 59340, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JUAN PABLO II, Jardines de Virginia, Boca del Río, Boca del Río, Veracruz de Ignacio de la Llave, 94294, México": {
+    "lat": 19.160408387881557,
+    "lon": -96.11681667017366
+  },
+  "AV JUAREZ, Xalapa Enríquez Centro, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JUAREZ SUR, Texcoco de Mora Centro, Texcoco, Texcoco de Mora, Estado de México, 56100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV JUAREZ SUR, Toluca De Lerdo Centro, Toluca, Toluca de Lerdo, Estado de México, 50000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV KANTENAH, Calica, Solidaridad, Playa del Carmen, Quintana Roo, 77710, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV L D COLOSIO, Benito Juárez Oriente, Tepic, Tepic, Nayarit, 63175, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LA AURORA, Jardines de la Hacienda Sur, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54720, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAS AMERICAS, Ylang Ylang, Boca del Río, Boca del Río, Veracruz de Ignacio de la Llave, 94298, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAS PALMAS, Guadalupe Victoria, Coatzacoalcos, Coatzacoalcos, Veracruz de Ignacio de la Llave, 96520, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAZARO CARDENAS, Benito Juárez (La Aurora), Nezahualcóyotl, Ciudad Nezahualcóyotl, Estado de México, 57000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAZARO CARDENAS, Las Canteras, Monterrey, Monterrey, Nuevo León, 64750, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAZARO CARDENAS, Las Jacarandas, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91157, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LAZARO CARDENAS, Predio De La Virgen, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91150, México": {
+    "lat": 19.542486691515414,
+    "lon": -96.90858216800791
+  },
+  "AV LIBERTAD, Chihuahua Centro, Chihuahua, Chihuahua, Chihuahua, 31000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LIBRAMIENTO J MANUEL ZAVALA, Insurgentes, San Miguel de Allende, San Miguel de Allende, Guanajuato, 37745, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LOMAS VERDES, Lomas de Occipaco, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53247, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LOPEZ MATEOS, Ciudad Del Sol, Zapopan, Zapopan, Jalisco, 45050, México": {
+    "lat": 20.6471073183234,
+    "lon": -103.40643717920119
+  },
+  "AV LOPEZ MATEOS, La Teja, Tlajomulco de Zúñiga, Tlajomulco de Zúñiga, Jalisco, 45640, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LORENZO BOUTURINI, Tránsito, Cuauhtémoc, Ciudad de México, Ciudad de México, 06820, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LOS TULES, Los Tules, Puerto Vallarta, Puerto Vallarta, Jalisco, 48333, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV LUIS DONALDO COLOSIO, Benito Juárez Oriente, Tepic, Tepic, Nayarit, 63175, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MADERO, Centro (Área 1), Cuauhtémoc, Ciudad de México, Ciudad de México, 06000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MADERO, San Andres Tuxtla Centro, San Andrés Tuxtla, San Andrés Tuxtla, Veracruz de Ignacio de la Llave, 95700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MADERO ORIENTE, Centro Histórico, Morelia, Morelia, Michoacán de Ocampo, 58000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MANUEL GOMEZ MORIN, Residencial San Francisco, Juárez, Juárez, Chihuahua, 32548, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MANUEL L BARRAGAN, Anáhuac, San Nicolás de los Garza, San Nicolás de los Garza, Nuevo León, 66450, México": {
+    "lat": 25.746047134015935,
+    "lon": -100.31111777069309
+  },
+  "AV MANUEL L. BARRAGAN, Residencial Anáhuac, San Nicolás de los Garza, San Nicolás de los Garza, Nuevo León, 66457, México": {
+    "lat": 25.746047134015935,
+    "lon": -100.31111777069309
+  },
+  "AV MARCELINO GARCIA BARAGAN, Prados Del Nilo, Guadalajara, Guadalajara, Jalisco, 44840, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MARIA AHUMADA DE GOMEZ, Campestre, Villa de Álvarez, Ciudad de Villa de Álvarez, Colima, 28988, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MARIANO ARISTA, Veracruz Centro, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91700, México": {
+    "lat": 19.19470138325197,
+    "lon": -96.14247340091259
+  },
+  "AV MARIANO OTERO, Ciudad Del Sol, Zapopan, Zapopan, Jalisco, 45050, México": {
+    "lat": 20.64567389602485,
+    "lon": -103.40775836598866
+  },
+  "AV MATAMOROS, Hermosillo Centro, Hermosillo, Hermosillo, Sonora, 83000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MIGUEL ALEMAN, Residencial los Morales, San Nicolás de los Garza, San Nicolás de los Garza, Nuevo León, 66470, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MIGUEL ALEMAN, Valle Soleado, Guadalupe, Guadalupe, Nuevo León, 67130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MIGUEL ANGEL DE QUEVEDO, Cristóbal Colón, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91755, México": {
+    "lat": 19.19620401003394,
+    "lon": -96.1557522620068
+  },
+  "AV MIGUEL ANGEL DE QUEVEDO, Romero de Terreros, Coyoacán, Ciudad de México, Ciudad de México, 04310, México": {
+    "lat": 19.345893242723132,
+    "lon": -99.17373706803178
+  },
+  "AV MIGUEL HIDALGO, Oaxaca Centro, Oaxaca de Juárez, Oaxaca de Juárez, Oaxaca, 68000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MIGUEL HIDALGO, Tenango De Arista Centro, Tenango Del Valle, Sin Ciudad, Estado de México, 52300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MONTERREY, Ampliación Unidad Nacional, Ciudad Madero, Ciudad Madero, Tamaulipas, 89510, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MONTEVIDEO, Lindavista Norte, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV MORELOS, Gómez Palacio Centro, Gómez Palacio, Gómez Palacio, Durango, 35000, México": {
+    "lat": 25.560207093516784,
+    "lon": -103.49490932468146
+  },
+  "AV MORELOS, Torreón Centro, Torreón, Torreón, Coahuila de Zaragoza, 27000, México": {
+    "lat": 25.53834990393425,
+    "lon": -103.46551150710769
+  },
+  "AV MUÑOZ, Muñoz, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78165, México": {
+    "lat": 22.1518358,
+    "lon": -100.9992903
+  },
+  "AV NEREO RODRIGUEZ BARRAGAN, Del Valle, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78200, México": {
+    "lat": 22.153463600000002,
+    "lon": -101.00731935
+  },
+  "AV NEXTENGO, Santa Cruz Acayucan, Azcapotzalco, Ciudad de México, Ciudad de México, 02770, México": {
+    "lat": 19.4779572,
+    "lon": -99.1884851
+  },
+  "AV NEZAHUALCOYOTL, Unión Antorchista, Chimalhuacán, Chimalhuacán, Estado de México, 56335, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV NICHUPTE, Supermanzana 51, Benito Juárez, Cancún, Quintana Roo, 77533, México": {
+    "lat": 21.1398036,
+    "lon": -86.854019
+  },
+  "AV NICHUPTE, Supermanzana 510, Benito Juárez, Cancún, Quintana Roo, 77534, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV NIÑOS HEROES, Supermanzana 225, Benito Juárez, Cancún, Quintana Roo, 77516, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV OBREGON, Cuauhtémoc, San Luis Río Colorado, San Luis Río Colorado, Sonora, 83400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV OBREGÓN, Heroica Nogales Centro, Nogales, Heroica Nogales, Sonora, 84000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ORIENTE 4 LOCAL 3, Orizaba Centro, Orizaba, Orizaba, Veracruz de Ignacio de la Llave, 94300, México": {
+    "lat": 18.847142919891063,
+    "lon": -97.1034395207446
+  },
+  "AV OTHON DE MENDIZABAL, Nueva Industrial Vallejo, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07700, México": {
+    "lat": 19.505890696290695,
+    "lon": -99.14947226913829
+  },
+  "AV PADRE MIER, Monterrey Centro, Monterrey, Monterrey, Nuevo León, 64000, México": {
+    "lat": 25.67042616217705,
+    "lon": -100.32667198312349
+  },
+  "AV PASEO MIGUEL LEYSON PEREZ, Ejidal, Guasave, Guasave, Sinaloa, 81020, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PASEO PUNTO SUR, Punto Sur, Tlajomulco de Zúñiga, Tlajomulco de Zúñiga, Jalisco, 45645, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PASEO TRIUNFO DE LA REPUBLICA, Ricardo Montoya, Juárez, Juárez, Chihuahua, 32310, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PATRICIO TRUEBA, Rinconada Samula, Campeche, San Francisco de Campeche, Campeche, 24090, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PEDRO CARDENAS, Villa Madrid, Matamoros, Heroica Matamoros, Tamaulipas, 87390, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PEDRO LOYOLA, FOVISSSTE 4a Sección, Ensenada, Ensenada, Baja California, 22830, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PEDRO SAINZ DE BARANDA, Ah-kim-pech, Campeche, San Francisco de Campeche, Campeche, 24014, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PEÑON, Alfareros, Chimalhuacán, Chimalhuacán, Estado de México, 56363, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PERIFERICA NORTE S/N, Camaroneros, Carmen, Ciudad del Carmen, Campeche, 24169, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PERIFERICO ORIENTE, Piedra Bola (Pedregal de la Villa), Hermosillo, Hermosillo, Sonora, 83290, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PLATEROS, Barrio Alto, Fresnillo, Fresnillo, Zacatecas, 99070, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PLAZA 31 DE MARZO PORTAL ORIENTE, San Cristóbal de las Casas Centro, San Cristóbal de las Casas, San Cristóbal de las Casas, Chiapas, 29200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PLAZAS DE ARAGON, Plazas de Aragón, Nezahualcóyotl, Ciudad Nezahualcóyotl, Estado de México, 57139, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PORTAL 20 DE NOVIEMBRE, Toluca De Lerdo Centro, Toluca, Toluca de Lerdo, Estado de México, 50000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PROL SANTOS DEGOLLADO, Tangamanga, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78269, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV PROLONGACIÓN PASEO DE LA REFORMA, Santa Fe, Álvaro Obregón, Ciudad de México, Ciudad de México, 01210, México": {
+    "lat": 19.3702284,
+    "lon": -99.2661564
+  },
+  "AV PUERTO BORDO XOCHIACA, Xaltipac, Chimalhuacán, Chimalhuacán, Estado de México, 56346, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RAFAEL BUELNA, Hacienda Las Cruces, Mazatlán, Mazatlán, Sinaloa, 82126, México": {
+    "lat": 23.246365901874864,
+    "lon": -106.43602745122055
+  },
+  "AV RAFAEL CUERVO, Playa Linda, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91810, México": {
+    "lat": 19.215141517752905,
+    "lon": -96.18211657430896
+  },
+  "AV RAFAEL SANZIO, Prados de Guadalupe, Zapopan, Zapopan, Jalisco, 45030, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RAMON RAYON, Parque Industrial Independencia, Juárez, Juárez, Chihuahua, 32575, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RAYON, Profedix Ii, Ixtlahuaca, Sin Ciudad, Estado de México, 50740, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REAL SAN AGUSTIN, Hacienda de La Sierra, San Pedro Garza García, San Pedro Garza García, Nuevo León, 66260, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REFORMA, Campestre, Nuevo Laredo, Nuevo Laredo, Tamaulipas, 88278, México": {
+    "lat": 27.46205560807823,
+    "lon": -99.51210105992999
+  },
+  "AV REFORMA, Centro, Puebla, Heroica Puebla de Zaragoza, Puebla, 72000, México": {
+    "lat": 19.046753101185622,
+    "lon": -98.20318019958725
+  },
+  "AV REFORMA, Las Alamedas, Nuevo Laredo, Nuevo Laredo, Tamaulipas, 88275, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REFORMA, Playa de Ensenada, Ensenada, Ensenada, Baja California, 22880, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REFORMA, San Luis Potosí Centro, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REFORMA Y APOLO, Jardines de la Alameda, Mazatlán, Mazatlán, Sinaloa, 82123, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV REVOLUCION, Campestre, Álvaro Obregón, Ciudad de México, Ciudad de México, 01040, México": {
+    "lat": 19.35401129369545,
+    "lon": -99.19020273950834
+  },
+  "AV REVOLUCION, El Rocio, Querétaro, Santiago de Querétaro, Querétaro, 76114, México": {
+    "lat": 20.6188218354912,
+    "lon": -100.43836671759868
+  },
+  "AV REVOLUCION, Guanajuato Centro, Guanajuato, Guanajuato, Guanajuato, 36000, México": {
+    "lat": 20.67736146135978,
+    "lon": -101.34294615206993
+  },
+  "AV REVOLUCION, Maestranza, Pachuca de Soto, Pachuca de Soto, Hidalgo, 42060, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RIO NILO, El Doradito, Tonalá, Tonalá, Jalisco, 45403, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ROMULO GARZA, Residencial Santa Fe, San Nicolás de los Garza, San Nicolás de los Garza, Nuevo León, 66477, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RUIZ, Sección Primera, Ensenada, Ensenada, Baja California, 22800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV RUIZ CORTINES, Lomas de Atizapán II, Atizapán de Zaragoza, Ciudad Adolfo López Mateos, Estado de México, 52977, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SALVADOR NAVA, Valle Dorado, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78399, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SAN ANTONIO, Tultitlán de Mariano Escobedo Centro, Tultitlán, Tultitlán de Mariano Escobedo, Estado de México, 54900, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SAN JERONIMO, Jardines del Pedregal, Álvaro Obregón, Ciudad de México, Ciudad de México, 01900, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SAN RAFAEL SANZIO, Prados de Guadalupe, Zapopan, Zapopan, Jalisco, 45030, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SAN ROQUE, 18 de Agosto, Irapuato, Irapuato, Guanajuato, 36590, México": {
+    "lat": 20.657104357787546,
+    "lon": -101.3412141999263
+  },
+  "AV SANTA CRUZ OJO DE AGUA, San Pedro Atzompa, Tecámac, Tecámac de Felipe Villanueva, Estado de México, 55770, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SANTA MARGARITA, San Francisco, Zapopan, Zapopan, Jalisco, 45130, México": {
+    "lat": 20.73139417650999,
+    "lon": -103.40786392230265
+  },
+  "AV SENDERO DIVISORIO, La Cantera Privada Residencial, General Escobedo, Ciudad General Escobedo, Nuevo León, 66059, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SIMON BOLIVAR, Paseo de Santa María, Cuautitlán, Cuautitlán, Estado de México, 54800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV SOR JUANA INÉS DE LA CRUZ, Plaza de las Rosas, Tlalnepantla de Baz, Tlalnepantla de Baz, Estado de México, 54069, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TECNOLOGICO, Del Márquez, Juárez, Juárez, Chihuahua, 32607, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TECNOLOGICO DE MONTERREY, Esmeralda, Morelia, Morelia, Michoacán de Ocampo, 58350, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TEOFILO BORUNDA, Partido Iglesias, Juárez, Juárez, Chihuahua, 32528, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TEOFILO BORUNDA, Villas de Pradera Dorada, Juárez, Juárez, Chihuahua, 32618, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TULUM SUR, Supermanzana 5 Centro, Benito Juárez, Cancún, Quintana Roo, 77500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV TULUM SUR, Supermanzana 6B, Benito Juárez, Cancún, Quintana Roo, 77503, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV UNIVERSIDAD, Candiani, Oaxaca de Juárez, Oaxaca de Juárez, Oaxaca, 68130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV UNIVERSIDAD, Santa Cruz Atoyac, Benito Juárez, Ciudad de México, Ciudad de México, 03310, México": {
+    "lat": 19.371589504482568,
+    "lon": -99.16434429249966
+  },
+  "AV UNIVERSIDAD KM. 8, Santa Maria, Coatzacoalcos, Coatzacoalcos, Veracruz de Ignacio de la Llave, 96536, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV UNIVERSIDAD VERACRUZANA KM. 8, Transportistas, Coatzacoalcos, Coatzacoalcos, Veracruz de Ignacio de la Llave, 96536, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV UNO, Córdoba Centro, Córdoba, Córdoba, Veracruz de Ignacio de la Llave, 94500, México": {
+    "lat": 18.89319855,
+    "lon": -96.93289370002483
+  },
+  "AV VALLARTA, Don Bosco Vallarta, Zapopan, Zapopan, Jalisco, 45049, México": {
+    "lat": 20.676200043762105,
+    "lon": -103.40825242957597
+  },
+  "AV VASCO DE QUIROGA, Santa Fe Cuajimalpa, Cuajimalpa de Morelos, Ciudad de México, Ciudad de México, 05348, México": {
+    "lat": 19.36305888712989,
+    "lon": -99.27339930713761
+  },
+  "AV VENTISCA, Solidaridad Nacional, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07268, México": {
+    "lat": 19.530253511721057,
+    "lon": -99.15502854221984
+  },
+  "AV VENTURA PUENTE, Cuauhtémoc, Morelia, Morelia, Michoacán de Ocampo, 58020, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV VÍA JOSÉ LÓPEZ PORTILLO, Ex-Hacienda San Felipe 1a. Sección, Coacalco de Berriozábal, Coacalco de Berriozabal, Estado de México, 55717, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV VÍA JOSÉ LÓPEZ PORTILLO, Residencial Sirapark, Coacalco de Berriozábal, Coacalco de Berriozabal, Estado de México, 55700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV VIALIDAD DE LA BARRANCA, Jesús del Monte, Huixquilucan, Huixquilucan de Degollado, Estado de México, 52764, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV VICENTE GUERRERO, Céntrika Victoria Elite, Monterrey, Monterrey, Nuevo León, 64520, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV VICENTE GUERRERO, Lomas de Miraval, Cuernavaca, Cuernavaca, Morelos, 62270, México": {
+    "lat": 18.934381165339765,
+    "lon": -99.23023089498544
+  },
+  "AV VICENTE GUERRERO, Los Volcanes 2da. Sección, Chalco, Chalco de Díaz Covarrubias, Estado de México, 56600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV ZARAGOZA, Coatzacoalcos Centro, Coatzacoalcos, Coatzacoalcos, Veracruz de Ignacio de la Llave, 96400, México": {
+    "lat": 18.146406841621875,
+    "lon": -94.41971485658
+  },
+  "BALTAZAR R. LEYVA MANCILLA, Militar, Chilpancingo de los Bravo, Chilpancingo de los Bravo, Guerrero, 39060, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BARBERAN Y COLLAR, Centro, Apizaco, Apizaco, Tlaxcala, 90300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BELDEN, Maclovio Herrera, Nuevo Laredo, Nuevo Laredo, Tamaulipas, 88120, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD A VILLAS DE IRAPUATO, Ejido Irapuato, Irapuato, Irapuato, Guanajuato, 36643, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ADOLFO LOPEZ  MATEOS, Independencia 2a Secc, Comalcalco, Comalcalco, Tabasco, 86670, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Centro Cívico, Mexicali, Mexicali, Baja California, 21000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Jabonera, Mexicali, Mexicali, Baja California, 21150, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Jardines de Jerez, León, León de los Aldama, Guanajuato, 37530, México": {
+    "lat": 21.099687184530996,
+    "lon": -101.63221986653748
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Jardines de la Bufa, León, León de los Aldama, Guanajuato, 37530, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Las Alamedas, Atizapán de Zaragoza, Ciudad Adolfo López Mateos, Estado de México, 52970, México": {
+    "lat": 19.556882028932886,
+    "lon": -99.24972296980032
+  },
+  "BLVD ADOLFO LOPEZ MATEOS, Lomas de Plateros, Álvaro Obregón, Ciudad de México, Ciudad de México, 01480, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD AEROPUERTO, Jardines de la Bufa, León, León de los Aldama, Guanajuato, 37530, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD AEROPUERTO MIGUEL ALEMAN, Lerma de Villada Centro, Lerma, Tezoyuca, Estado de México, 52000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD AGUA CALIENTES, Hipódromo Agua Caliente, Tijuana, Tijuana, Baja California, 22024, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ALVARO OBREGON SUR, Colinas de San Miguel, Culiacán, Culiacán Rosales, Sinaloa, 80228, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ANDRES SERRA ROJAS, El Retiro, Tuxtla Gutiérrez, Tuxtla Gutiérrez, Chiapas, 29040, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ANTONIO ROCHA CORDERO, Lomas del Tecnológico, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78215, México": {
+    "lat": 22.12981161547303,
+    "lon": -101.02755110838542
+  },
+  "BLVD ANTONIO ROSALES Y CARRETERA INTERNACIONAL, Chutamonas, Salvador Alvarado, Guamúchil, Sinaloa, 81460, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ARTURO MONTIEL ROJAS, Atlacomulco De Fabela Centro, Atlacomulco, Sin Ciudad, Estado de México, 50450, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BELISARIO DOMINGUEZ, Bugambilias, Tuxtla Gutiérrez, Tuxtla Gutiérrez, Chiapas, 29056, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BENITO JUAREZ, María Luisa, San Juan Bautista Tuxtepec, San Juan Bautista Tuxtepec, Oaxaca, 68310, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BERNARDO QUINTANA ARRIOJA, Álamos 3a Sección, Querétaro, Santiago de Querétaro, Querétaro, 76160, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BLV ANTONIO ROCHA CORDERO, Del Valle, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BLV.URIANGATO, Las Arboledas, Uriangato, Uriangato, Guanajuato, 38983, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BLVD. VALLE DE SANTIAGO, Salamanca Centro, Salamanca, Salamanca, Guanajuato, 36700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD BLVD. VILLAS DE IRAPUATO, Lombardía, Irapuato, Irapuato, Guanajuato, 36670, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CENTENARIO, Primer Cuadro (Centro), Ahome, Los Mochis, Sinaloa, 81200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CENTENARIO, Santa Cecilia, Ahome, Los Mochis, Sinaloa, 81271, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CHAHUE, Residencial Conejos, Santa María Huatulco, Bahias de Huatulco, Oaxaca, 70989, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CORREDOR TIJUANA-ROSARITO 2000, Ejido Francisco Villa, Tijuana, Tijuana, Baja California, 22236, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CULTURA, Palo Verde, Hermosillo, Hermosillo, Sonora, 83280, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD CULTURA, Proyecto Río Sonora, Hermosillo, Hermosillo, Sonora, 83270, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD DE LAS FEDERACIONES KM 1260.5, Paraíso Chichima, Comitán de Domínguez, Comitán de Domínguez, Chiapas, 30093, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD DE LAS NACIONES, Granjas del Marqués, Acapulco de Juárez, Acapulco de Juárez, Guerrero, 39890, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD DEL NIÑO POBLAMO, La Cima, Puebla, Heroica Puebla de Zaragoza, Puebla, 72197, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD DIAZ ORDAZ, Irapuato Centro, Irapuato, Irapuato, Guanajuato, 36500, México": {
+    "lat": 20.678506019089312,
+    "lon": -101.34544632162441
+  },
+  "BLVD DIEGO VALADEZ RIOS, Lago Tres Ríos, Culiacán, Culiacán Rosales, Sinaloa, 80027, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD EL BOTE, Lázaro Cárdenas, Zacatecas, Zacatecas, Zacatecas, 98040, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD EL GRECO, Luis Donaldo Colosio, Nogales, Heroica Nogales, Sonora, 84066, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD EULALIO GUTIERREZ TREVIÑO, Privada de San Javier, Saltillo, Saltillo, Coahuila de Zaragoza, 25010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD EUQUERIO GUERRERO, Marfil Centro, Guanajuato, Marfil, Guanajuato, 36250, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD FELIPE PESCADOR, Real del Prado, Durango, Victoria de Durango, Durango, 34080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD FELIPE PESCADOR, Victoria de Durango Centro, Durango, Victoria de Durango, Durango, 34000, México": {
+    "lat": 24.03540696419662,
+    "lon": -104.65880897690253
+  },
+  "BLVD FORJADORES, Sanctorum, Cuautlancingo, Cuautlancingo, Puebla, 72730, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD FORJADORES, Tecnológico, La Paz, La Paz, Baja California Sur, 23050, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD FORJADORES DE SUDCALIFORNIA, Tecnológico, La Paz, La Paz, Baja California Sur, 23050, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD GOMEZ MORIN, El Álamo, Delicias, Delicias, Chihuahua, 33070, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD GUSTAVO DIAZ ORDAZ, Manuel Paredes II, Tijuana, Tijuana, Baja California, 22610, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD GUSTAVO DIAZ ORDAZ, Rincón de Otay, Tijuana, Tijuana, Baja California, 22450, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD HAROLD PAPE, Estancias de San Juan Bautista, Monclova, Monclova, Coahuila de Zaragoza, 25733, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD HAROLD R. PAPE, Estancias de San Juan Bautista, Monclova, Monclova, Coahuila de Zaragoza, 25733, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD HERMANOS SERDAN, Villa Posadas, Puebla, Heroica Puebla de Zaragoza, Puebla, 72060, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD HEROES DEL 5 DE MAYO, Anzures, Puebla, Heroica Puebla de Zaragoza, Puebla, 72530, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD HEROES DEL 5 DE MAYO, Las Hadas Mundial 86, Puebla, Heroica Puebla de Zaragoza, Puebla, 72070, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD INDEPENDENCIA, Navarro, Torreón, Torreón, Coahuila de Zaragoza, 27010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD INDEPENDENCIA, Parque Industrial Los Bravos, Juárez, Juárez, Chihuahua, 32575, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD INSURGENTES, Puerta del Río, Tijuana, Tijuana, Baja California, 22226, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD INSURGENTES, Río Tijuana 3a Etapa, Tijuana, Tijuana, Baja California, 22226, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD JESUS KUMATE RODRIGUEZ, Las Flores, Culiacán, Culiacán Rosales, Sinaloa, 80104, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD JOSE DIEGO VALADES RIOS, Cuauhtémoc, Culiacán, Culiacán Rosales, Sinaloa, 80027, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD JOSE MA. CHAVEZ, Agricultura, Aguascalientes, Aguascalientes, Aguascalientes, 20234, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD JUAN A. TORRES, Lomas del Campestre, León, León de los Aldama, Guanajuato, 37150, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD JUAN ALONSO DE TORRES, San José del Consuelo, León, León de los Aldama, Guanajuato, 37200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LAZARO CARDENAS, El Porvenir, Mexicali, Mexicali, Baja California, 21220, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LAZARO CARDENAS, Mesa de Otay, Tijuana, Tijuana, Baja California, 22430, México": {
+    "lat": 32.51475775,
+    "lon": -116.96240415
+  },
+  "BLVD LAZARO CARDENAS, Morelos, Poza Rica de Hidalgo, Poza Rica de Hidalgo, Veracruz de Ignacio de la Llave, 93340, México": {
+    "lat": 20.53116074251807,
+    "lon": -97.46979937504445
+  },
+  "BLVD LAZARO CARDENAS, Pimsa Ii, Mexicali, Mexicali, Baja California, 21397, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LAZARO CARDENAS DEL RIO, Santa Emilia, Poza Rica de Hidalgo, Poza Rica de Hidalgo, Veracruz de Ignacio de la Llave, 93210, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LAZARO CARDENAS LOCAL 36, Plaza Bonita, Los Cabos, Cabo San Lucas, Baja California Sur, 23450, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LOPEZ MATEOS, Celaya Centro, Celaya, Celaya, Guanajuato, 38000, México": {
+    "lat": 20.51970235,
+    "lon": -100.81386995
+  },
+  "BLVD LOPEZ PORTILLO, 3 Cruces Infonavit, Zacatecas, Zacatecas, Zacatecas, 98064, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LUIS DONALDO COLOSIO, El Greco, Nogales, Heroica Nogales, Sonora, 84066, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LUIS DONALDO COLOSIO, Heroica Nogales Centro, Nogales, Heroica Nogales, Sonora, 84000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LUIS DONALDO COLOSIO KM 7.7, 16 de Enero, Pachuca de Soto, Pachuca de Soto, Hidalgo, 42064, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD LUIS DONALDO COLOSIO KM 77, Colinas de Plata, Mineral de la Reforma, Mineral de la Reforma, Hidalgo, 42186, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MANUEL ANTONIO ROMERO ZURITA, Francisco I. Madero (Madero), Paraíso, Paraíso, Tabasco, 86600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MANUEL AVILA CAMACHO, Cuauhtémoc, Minatitlán, Minatitlán, Veracruz de Ignacio de la Llave, 96880, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MANUEL AVILA CAMACHO, Lomas de Sotelo, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53390, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MANUEL ÁVILA CAMACHO, Bosques de México, Tlalnepantla de Baz, Tlalnepantla de Baz, Estado de México, 54050, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MIGUEL ALEMAN, Barrio San Gabriel, Toluca, Toluca de Lerdo, Estado de México, 50200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MIGUEL ALEMAN, Las Rosas, Gómez Palacio, Gómez Palacio, Durango, 35090, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MIGUEL ALEMAN, Valle Campestre, Gómez Palacio, Gómez Palacio, Durango, 35080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MIGUEL DE CERVANTES SAAVEDRA, Granada, Miguel Hidalgo, Ciudad de México, Ciudad de México, 11520, México": {
+    "lat": 19.441012869109304,
+    "lon": -99.1968752165044
+  },
+  "BLVD MIGUEL DE CERVANTES SAAVEDRA, Irrigación, Miguel Hidalgo, Ciudad de México, Ciudad de México, 11500, México": {
+    "lat": 19.441314606845022,
+    "lon": -99.21050545237344
+  },
+  "BLVD MIGUEL DE LA MADRID, La Punta, Manzanillo, Manzanillo, Colima, 28867, México": {
+    "lat": 19.060831530539815,
+    "lon": -104.29028614451188
+  },
+  "BLVD MIGUEL DE LA MADRID, Villa Coral, Manzanillo, Manzanillo, Colima, 28869, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MIGUEL HIDALGO, Santa Clara, Tulancingo de Bravo, Tulancingo, Hidalgo, 43642, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD MORELOS, La Ventana, Hermosillo, Hermosillo, Sonora, 83148, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD NAZARIO ORTIZ, Residencial Los Parques, Saltillo, Saltillo, Coahuila de Zaragoza, 25279, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD OCOTLAN, Ocotlán, Tlaxcala, Tlaxcala de Xicohténcatl, Tlaxcala, 90100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD PASEO DE LOS HEROES, Zona Urbana Río Tijuana, Tijuana, Tijuana, Baja California, 22010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD PEDRO INFANTE, Portales Del Country, Culiacán, Culiacán Rosales, Sinaloa, 80100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD PROL. CORREGIDORA NTE, Álamos 3a Sección, Querétaro, Santiago de Querétaro, Querétaro, 76160, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD PUERTA DE HIERRO, Puerta de Hierro, Zapopan, Zapopan, Jalisco, 45116, México": {
+    "lat": 20.71123837324243,
+    "lon": -103.41698793080897
+  },
+  "BLVD PUERTO INDUSTRIAL, Altamira Centro, Altamira, Altamira, Tamaulipas, 89600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD RENE JUAREZ CISNEROS, Balcones de Tepango, Chilpancingo de los Bravo, Chilpancingo de los Bravo, Guerrero, 39095, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD REVOLUCION, Cadereyta Jiménez Centro, Cadereyta Jiménez, Cadereyta Jiménez, Nuevo León, 67480, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ROSALES Y ROSENDO G CASTRO, Primer Cuadro (Centro), Ahome, Los Mochis, Sinaloa, 81200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD SOLIDARIDAD, Nueva Palmira Residencial, Hermosillo, Hermosillo, Sonora, 83170, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD TAMAULIPAS, San Ángel, Victoria, Ciudad Victoria, Tamaulipas, 87027, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD TOLUCA IXTAPAN NTE, San Miguel, Metepec, Metepec, Estado de México, 52140, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD TULA ITURBIDE, Centro, Tula de Allende, Tula de Allende, Hidalgo, 42800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD VALLE DEL CAMPESTRE, Valle del Campestre, León, León de los Aldama, Guanajuato, 37150, México": {
+    "lat": null,
+    "lon": null
+  },
+  "BLVD ZACATECAS, Trojes de Alonso, Aguascalientes, Aguascalientes, Aguascalientes, 20116, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 3, Revolución (Cordemex), Mérida, Mérida, Yucatán, 97110, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 7, Altabrisa, Mérida, Mérida, Yucatán, 97130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 7, Vista Alegre Norte, Mérida, Mérida, Yucatán, 97130, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 18, Centro Umán, Umán, Umán, Yucatán, 97390, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 21, Hacienda Inn, Mérida, Mérida, Yucatán, 97229, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 21, Miguel Hidalgo, Mérida, Mérida, Yucatán, 97220, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 21, Ticul Centro, Ticul, Ticul, Yucatán, 97860, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 31, Privada Nuevo México, Mérida, Mérida, Yucatán, 97125, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 58, Jardines de San Sebastian, Mérida, Mérida, Yucatán, 97000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 60, Plan de Ayala, Mérida, Mérida, Yucatán, 97118, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALLE 63 X 45 Y 46, Jardines de San Sebastian, Mérida, Mérida, Yucatán, 97000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CALZ CETYS, Rivera, Mexicali, Mexicali, Baja California, 21259, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CANAL DE MIRAMONTES, Residencial Miramontes, Tlalpan, Ciudad de México, Ciudad de México, 14300, México": {
+    "lat": 19.30357650031654,
+    "lon": -99.12454343752572
+  },
+  "CARR APIZACO - PUEBLA, Jesús, Apetatitlán de Antonio Carvajal, Apetatitlán de Antonio Carvajal, Tlaxcala, 90610, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR CARRETERA NACIONAL, Cerradas De Valle Alto Residencial, Monterrey, Monterrey, Nuevo León, 64984, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR CARRETERA QUERÉTARO - SAN LUIS POTOSÍ, Palmares, Querétaro, Santiago de Querétaro, Querétaro, 76127, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR CARRETERA SAN LUIS - RIOVERDE, Jardines del Valle, Soledad de Graciano Sánchez, Soledad de Graciano Sánchez, San Luis Potosí, 78437, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR CARRETERA SAN LUIS POTOSI - MATEHUALA, Soledad De Graciano Sánchez Centro, Soledad de Graciano Sánchez, Soledad de Graciano Sánchez, San Luis Potosí, 78430, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR COATZACOALCOS A SALINA CRUZ KM. 62/480, Oluta, Oluta, Oluta, Veracruz de Ignacio de la Llave, 96160, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR COSTERA DEL GOLFO, San Pedro, San Andrés Tuxtla, San Andrés Tuxtla, Veracruz de Ignacio de la Llave, 95730, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR CUAUTITLAN TULTEPEC, Dos Ríos Primera Sección, Cuautitlán, Cuautitlán, Estado de México, 54850, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR FEDERAL MEXICO-CUAUTLAKM 37, Santa Bárbara, Ixtapaluca, Ixtapaluca, Estado de México, 56538, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR FEDERAL XALAPA-VERACRUZ KM 2.5, Rubí Ánimas, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91193, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR FEDERAL XALAPA-VERACRUZ KM 25, Villa Animas, Xalapa, Xalapa-Enríquez, Veracruz de Ignacio de la Llave, 91198, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR JOROBAS-TULA, Huehuetoca, Huehuetoca, Tezoyuca, Estado de México, 54680, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR LIBRAMIENTO, San Sebastián Atlahapa, Tlaxcala, Tlaxcala de Xicohténcatl, Tlaxcala, 90111, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR LIBRE MONTERREY-REYNOSA, Valle Verde, Reynosa, Reynosa, Tamaulipas, 88720, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR LIBRE TIJUANA, Fideicomiso el Florido, Tijuana, Tijuana, Baja California, 22245, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR LIBRE TIJUANA, Lepro, Playas de Rosarito, Playas de Rosarito, Baja California, 22704, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR LOS GONZALEZ, Valle de Santa Elena, Saltillo, Saltillo, Coahuila de Zaragoza, 25023, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR MEXICO LAREDO, San Luis Poniente, Ciudad Valles, Ciudad Valles, San Luis Potosí, 79082, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR MEXICO PACHUCA KM 36.5, Ampliación 5 de Mayo, Tecámac, Tecámac de Felipe Villanueva, Estado de México, 55749, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR MEXICO-JALAPA KM 4353, Valle Alto, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91697, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR MEXICO-TOLUCA KM, Lerma de Villada Centro, Lerma, Tezoyuca, Estado de México, 52000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR PICACHO AJUSCO, Héroes de Padierna, Tlalpan, Ciudad de México, Ciudad de México, 14200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR POZA RICA - CAZONES, La Rueda, Poza Rica de Hidalgo, Poza Rica de Hidalgo, Veracruz de Ignacio de la Llave, 93306, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TAMPICO-MANTE, Francisco Javier Mina, Tampico, Tampico, Tamaulipas, 89318, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TAPACHULA PUERTO MADERO KM 2.5, Ecológico las Hortensias, TAPACHULA DE CÓRDOVA Y ORDÓÑEZ, Tapachula de Córdova y Ordóñez, Chiapas, 30797, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TOLUCA, Barrio San Gabriel, Toluca, Toluca de Lerdo, Estado de México, 50200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TRANSISMICA, Rosalinda, Minatitlán, Minatitlán, Veracruz de Ignacio de la Llave, 96710, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TRANSISMICA OLUTA - ACAYUCAN KM 62 + 480, Oluta, Oluta, Oluta, Veracruz de Ignacio de la Llave, 96160, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TRANSPENINSULAR, Nuevo Reforma II, Ensenada, Ensenada, Baja California, 22812, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TRANSPENINSULAR SAN LUCAS LA PAZKM2.5, Cabo San Lucas Country Club, Los Cabos, Cabo San Lucas, Baja California Sur, 23463, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR TUXTLA-CHIAPA DE CORZO, El Retiro, Tuxtla Gutiérrez, Tuxtla Gutiérrez, Chiapas, 29040, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR ZUMPANGO-LOS REYES ACOZAC, Buenavista, Zumpango, Zumpango, Estado de México, 55635, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CARR ZUMPANGO-LOS REYES ACOZAC, Villas 2000, Zumpango, Zumpango, Estado de México, 55607, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CASA BLANCA SAN FCO OCOTLAN, Residencial De Jesús, San Pedro Cholula, San Pedro Cholula, Puebla, 72760, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CIRC C. COMERCIAL, Club Cuicacalli, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CIRC CENTRO COMERCIAL, Club Cuicacalli, Naucalpan de Juárez, Naucalpan de Juárez, Estado de México, 53100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CIRC PASEO TOLLOCAN, Villas de Santa Ana III, Toluca, Toluca de Lerdo, Estado de México, 50160, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA ADOLFO LOPEZ MATEOS, Aquiles Serdán, Tehuacán, Tehuacán, Puebla, 75750, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA AGUSTIN GARCIA LOPEZ, Mariana, Guaymas, Heroica Guaymas, Sonora, 85440, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA CALZ.LA HUERTA, Ampliación Hacienda de la Huerta, Morelia, Morelia, Michoacán de Ocampo, 58080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA DEL HUESO, Los Girasoles, Coyoacán, Ciudad de México, Ciudad de México, 04920, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA DEL HUESO, Los Sauces, Coyoacán, Ciudad de México, Ciudad de México, 04940, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA DIVISION DEL NORTE, La Hacienda Oriente, Torreón, Torreón, Coahuila de Zaragoza, 27276, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA EMILIANO ZAPATA, José Cardel Centro, La Antigua, José Cardel, Veracruz de Ignacio de la Llave, 91680, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA ERMITA IZTAPALAPA, Santa Martha Acatitla, Iztapalapa, Ciudad de México, Ciudad de México, 09510, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA GUADALUPE, 7 de Noviembre, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07840, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA IGNACIO ZARAGOZA, Corredor Industrial La Ciénega, Puebla, Heroica Puebla de Zaragoza, Puebla, 72220, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA IGNACIO ZARAGOZA, Juan Escutia, Iztapalapa, Ciudad de México, Ciudad de México, 09100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA JOSE LIMON CALZADA, Privada La Rivera, Culiacán, Culiacán Rosales, Sinaloa, 80020, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CLZDA VALLEJO, Industrial Vallejo, Azcapotzalco, Ciudad de México, Ciudad de México, 02300, México": {
+    "lat": null,
+    "lon": null
+  },
+  "COLON, Guadalajara Centro, Guadalajara, Guadalajara, Jalisco, 44100, México": {
+    "lat": 20.6647,
+    "lon": -103.35233
+  },
+  "CONSTITUCION, Privada del Sahuaro, Durango, Victoria de Durango, Durango, 34000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "CONSTITUYENTES 1975, La Esperanza 3, La Paz, La Paz, Baja California Sur, 23090, México": {
+    "lat": null,
+    "lon": null
+  },
+  "DE LAS BRISAS, Altos de Miramar, Los Cabos, Cabo San Lucas, Baja California Sur, 23456, México": {
+    "lat": null,
+    "lon": null
+  },
+  "DEMETRIO RUIZ MALERMA, Rosa Maria, Tuxpan, Túxpam de Rodríguez Cano, Veracruz de Ignacio de la Llave, 92860, México": {
+    "lat": null,
+    "lon": null
+  },
+  "EJE NORPONIENTE, Palma Real, Celaya, Celaya, Guanajuato, 38080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "EJE NORPONIENTE, Providencia, Celaya, Celaya, Guanajuato, 38020, México": {
+    "lat": null,
+    "lon": null
+  },
+  "EJE NORPONIENTE, Santa Teresa, Celaya, Celaya, Guanajuato, 38080, México": {
+    "lat": null,
+    "lon": null
+  },
+  "EMILIO MENDOZA, Amistad, Acuña, Ciudad Acuña, Coahuila de Zaragoza, 26248, México": {
+    "lat": 29.338917205985794,
+    "lon": -100.99026632376322
+  },
+  "EZEQUIEL MONTES, Tabacalera, Cuauhtémoc, Ciudad de México, Ciudad de México, 06030, México": {
+    "lat": 19.43526245,
+    "lon": -99.15648095
+  },
+  "GUADALUPE VICTORIA SUR, La Barranca, Tenancingo, Tezoyuca, Estado de México, 52400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "GUERRERO, Irapuato Centro, Irapuato, Irapuato, Guanajuato, 36500, México": {
+    "lat": 20.674923394728616,
+    "lon": -101.34752087919826
+  },
+  "GUERRERO Y CORTAZAR, Irapuato Centro, Irapuato, Irapuato, Guanajuato, 36500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "GUTENBERG, Cuernavaca Centro, Cuernavaca, Cuernavaca, Morelos, 62000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "HDA DE SIERRA VIEJA, Torres Algibe, Cuautitlán Izcalli, Cuautitlán Izcalli, Estado de México, 54769, México": {
+    "lat": null,
+    "lon": null
+  },
+  "HEBERTO CASTILLO MARTINEZ, Las Villas, García, García, Nuevo León, 66004, México": {
+    "lat": null,
+    "lon": null
+  },
+  "HIDALGO, Ciudad Valles Centro, Ciudad Valles, Ciudad Valles, San Luis Potosí, 79000, México": {
+    "lat": 21.9861759,
+    "lon": -99.01909357941776
+  },
+  "HIDALGO, Ixtlán Del Río Centro, Ixtlán del Río, Ixtlán del Río, Nayarit, 63950, México": {
+    "lat": null,
+    "lon": null
+  },
+  "HIDALGO, Pénjamo Centro, Pénjamo, Pénjamo, Guanajuato, 36900, México": {
+    "lat": 20.4302462,
+    "lon": -101.7235598
+  },
+  "HIDALGO, Tulancingo Centro, Tulancingo de Bravo, Tulancingo, Hidalgo, 43600, México": {
+    "lat": null,
+    "lon": null
+  },
+  "IGNACIO DE LA LLAVE, Pozo de La Nación, Acapulco de Juárez, Acapulco de Juárez, Guerrero, 39300, México": {
+    "lat": 16.846883106918348,
+    "lon": -99.90787700473304
+  },
+  "ING EDUARDO MOLINA, Granjas Modernas, Gustavo A. Madero, Ciudad de México, Ciudad de México, 07460, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JESUS ELIAS PIÑA, Naciones Unidas, Victoria, Ciudad Victoria, Tamaulipas, 87049, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JIMENEZ, Las Fuentes, Piedras Negras, Piedras Negras, Coahuila de Zaragoza, 26010, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JOSE MA CASTORENA, Cuajimalpa, Cuajimalpa de Morelos, Ciudad de México, Ciudad de México, 05000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JOSE MARIA MORELOS, Los Fresnos, Victoria, Ciudad Victoria, Tamaulipas, 87000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JUAN B TIJERINA, Las Palmas, Victoria, Ciudad Victoria, Tamaulipas, 87140, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JUAREZ, Cortazar Centro, Cortazar, Cortazar, Guanajuato, 38300, México": {
+    "lat": 20.488459012326793,
+    "lon": -100.96296293201398
+  },
+  "JUAREZ, Pedro C Colorado, Huimanguillo, Huimanguillo, Tabasco, 86400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JUAREZ, Salamanca Centro, Salamanca, Salamanca, Guanajuato, 36700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "JUÁREZ, Guanajuato Centro, Guanajuato, Guanajuato, Guanajuato, 36000, México": {
+    "lat": 20.726677433599342,
+    "lon": -101.95132989850931
+  },
+  "LERDO DE TEJADA, Nicolás Bravo, Macuspana, Macuspana, Tabasco, 86700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "LIBRAMIENTO DE TORREON, Residencial los Fresnos, Torreón, Torreón, Coahuila de Zaragoza, 27018, México": {
+    "lat": null,
+    "lon": null
+  },
+  "MADERO, Aguascalientes Centro, Aguascalientes, Aguascalientes, Aguascalientes, 20000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "MICHOACAN, Centro Dolores Hidalgo, Dolores Hidalgo Cuna de la Independencia Nacional, Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato, 37800, México": {
+    "lat": 21.157007590543014,
+    "lon": -100.9347539960722
+  },
+  "MIGUEL HIDALGO, El Tigre, Cuerámaro, Cuerámaro, Guanajuato, 36960, México": {
+    "lat": 20.627053200974867,
+    "lon": -101.67385375629893
+  },
+  "MIGUEL HIDALGO, Rancho la Providencia, Metepec, Metepec, Estado de México, 52177, México": {
+    "lat": null,
+    "lon": null
+  },
+  "MIGUEL HIDALGO, Taxco de Alarcón Centro, Taxco de Alarcón, Taxco de Alarcón, Guerrero, 40200, México": {
+    "lat": null,
+    "lon": null
+  },
+  "NORTE 45, Industrial Vallejo, Azcapotzalco, Ciudad de México, Ciudad de México, 02300, México": {
+    "lat": 19.4963557,
+    "lon": -99.1597679
+  },
+  "PARROQUIA, Insurgentes San Borja, Benito Juárez, Ciudad de México, Ciudad de México, 03100, México": {
+    "lat": 19.387198750000003,
+    "lon": -99.17683147956211
+  },
+  "PASEO IRAPUATO, Santa María 2a Sección, Irapuato, Irapuato, Guanajuato, 36640, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF 3ER ANILLO PERIFERICO, Hacienda Real, Colima, Colima, Colima, 28018, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF CARLOS MOLINA, Cárdenas Centro, Cárdenas, Cárdenas, Tabasco, 86500, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF CARLOS PELLICER CAMARA, Primero de Mayo, Centro, Villahermosa, Tabasco, 86190, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF OTE, Iguala de La Independencia Centro, Iguala de la Independencia, Iguala de la Independencia, Guerrero, 40000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF PERIFERICO, La Esperanza, Iztapalapa, Ciudad de México, Ciudad de México, 09910, México": {
+    "lat": 19.3143977,
+    "lon": -99.0765005
+  },
+  "PERIF PERIFERICO DE LA JUVENTUD, Plaza del Sol, Chihuahua, Chihuahua, Chihuahua, 31207, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF PERIFERICO DE LA JUVENTUD, Quintas del Sol, Chihuahua, Chihuahua, Chihuahua, 31214, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF PERIFERICO SUR, Tulipanes, San Pedro Tlaquepaque, Tlaquepaque, Jalisco, 45601, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF PONIENTE, Pimentel, Hermosillo, Hermosillo, Sonora, 83188, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF RAUL LOPEZ SANCHEZ, Residencial el Fresno, Torreón, Torreón, Coahuila de Zaragoza, 27018, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PERIF SUR, Jardines del Pedregal de San Ángel, Coyoacán, Ciudad de México, Ciudad de México, 04500, México": {
+    "lat": 19.302660965305087,
+    "lon": -99.18838708021454
+  },
+  "PERIFERICO CRUCE LIBRAMIENTO SUR, Granjas Económicas del Norte, Reynosa, Reynosa, Tamaulipas, 88730, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PINO SUÁREZ, Silao Centro, Silao de la Victoria, Silao, Guanajuato, 36100, México": {
+    "lat": 20.94601182835769,
+    "lon": -101.42791705368097
+  },
+  "PLAZA CENTENARIO HIDALGO, Lagos de Moreno Centro, Lagos de Moreno, Lagos de Moreno, Jalisco, 47400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PREDIO SOLAR URBANO, Haciendas de Aguascalientes, Aguascalientes, Aguascalientes, Aguascalientes, 20196, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROFESOR RAMON MENDOZA, José María Pino Suárez, Centro, Villahermosa, Tabasco, 86029, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL 16 DE SEPTIEMBRE, Texcoco de Mora Centro, Texcoco, Texcoco de Mora, Estado de México, 56100, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL BOSQUES DE REFORMA, Lomas de Vista Hermosa, Cuajimalpa de Morelos, Ciudad de México, Ciudad de México, 05100, México": {
+    "lat": 19.377169917863416,
+    "lon": -99.25975967841131
+  },
+  "PROL CODO, San Miguel de Allende Centro, San Miguel de Allende, San Miguel de Allende, Guanajuato, 37700, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL DIAZ MIRON, Del Maestro, Veracruz, Veracruz, Veracruz de Ignacio de la Llave, 91920, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL JUAREZ NORTE, Centro, Querétaro, Santiago de Querétaro, Querétaro, 76000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL LAS PALOMAS 4TA SUR, Cantarranas, TAPACHULA DE CÓRDOVA Y ORDÓÑEZ, Tapachula de Córdova y Ordóñez, Chiapas, 30797, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL MORELOS, San Luis Potosí Centro, San Luis Potosí, San Luis Potosí, San Luis Potosí, 78000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "PROL PASEO TABASCO, Real de Minas, Centro, Villahermosa, Tabasco, 86035, México": {
+    "lat": null,
+    "lon": null
+  },
+  "QUINTIN ARAUZ, Primero de Mayo, Centro, Villahermosa, Tabasco, 86190, México": {
+    "lat": 17.978457249999998,
+    "lon": -92.9347626
+  },
+  "REAL MAYORAZGO, Xoco, Benito Juárez, Ciudad de México, Ciudad de México, 03330, México": {
+    "lat": 19.361452498106505,
+    "lon": -99.16992289587209
+  },
+  "RIO MISSOURI, Jardines Del Valle, San Pedro Garza García, San Pedro Garza García, Nuevo León, 66220, México": {
+    "lat": null,
+    "lon": null
+  },
+  "SALVADOR DIAZ MIRON, Tampico Centro, Tampico, Tampico, Tamaulipas, 89000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "SANCHEZ TORRADO, Salamanca Centro, Salamanca, Salamanca, Guanajuato, 36700, México": {
+    "lat": 20.574300422499697,
+    "lon": -101.19930414951185
+  },
+  "TACUBA, Zacatecas Centro, Zacatecas, Zacatecas, Zacatecas, 98000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "VICENTE GUERRERO, Ciudad Mante Centro, El Mante, Ciudad Mante, Tamaulipas, 89800, México": {
+    "lat": null,
+    "lon": null
+  },
+  "ZARAGOZA, Piedras Negras Centro, Piedras Negras, Piedras Negras, Coahuila de Zaragoza, 26000, México": {
+    "lat": null,
+    "lon": null
+  },
+  "Total General, Total General, Total General, Total General, Total General, México": {
+    "lat": null,
+    "lon": null
+  },
+  "AV COSTERA MIGUEL ALEMAN, Magallanes, Acapulco de Juárez, Acapulco de Juárez, Guerrero, 39670, México": {
+    "lat": 16.861436916561097,
+    "lon": -99.8779215250899
+  },
+  "AV VIA MORELOS, Nieves, Ecatepec de Morelos, Ecatepec de Morelos, Estado de México, 55400, México": {
+    "lat": null,
+    "lon": null
+  },
+  "Blvd. Industrial, El Colorin Norte, Uruapan, Uruapan, Michoacán de Ocampo, 60120, México": {
+    "lat": 19.4147269,
+    "lon": -102.0522647
+  },
+  "Uruapan, Michoacán de Ocampo, México": {
+    "lat": 19.4147269,
+    "lon": -102.0522647
+  },
+  "Colima, Colima, México": {
+    "lat": 19.2433991,
+    "lon": -103.7280738
+  },
+  "Tapachula de Córdova y Ordóñez, Chiapas, México": {
+    "lat": 14.9042905,
+    "lon": -92.2609265
+  },
+  "León de los Aldama, Guanajuato, México": {
+    "lat": 21.121965,
+    "lon": -101.6829766
+  },
+  "La Paz, Baja California Sur, México": {
+    "lat": 24.1619948,
+    "lon": -110.3158532
+  },
+  "La Piedad de Cabadas, Michoacán de Ocampo, México": {
+    "lat": 20.3429949,
+    "lon": -102.031124
+  },
+  "Cárdenas, Tabasco, México": {
+    "lat": 18.169369500000002,
+    "lon": -93.70522924168885
+  },
+  "Tampico, Tamaulipas, México": {
+    "lat": 22.27010965,
+    "lon": -97.89486735598555
+  },
+  "Saltillo, Coahuila de Zaragoza, México": {
+    "lat": 25.4230425,
+    "lon": -100.9927509
+  },
+  "Xalapa-Enríquez, Veracruz de Ignacio de la Llave, México": {
+    "lat": 19.5408338,
+    "lon": -96.9146374
+  },
+  "Cuernavaca, Morelos, México": {
+    "lat": 18.93313205,
+    "lon": -99.25995794657074
+  },
+  "Pachuca de Soto, Hidalgo, México": {
+    "lat": 20.10451,
+    "lon": -98.78892237167076
+  },
+  "Cuautitlán Izcalli, Estado de México, México": {
+    "lat": 19.6531356,
+    "lon": -99.2145002
+  },
+  "Comitán de Domínguez, Chiapas, México": {
+    "lat": 16.2441097,
+    "lon": -92.1348514
+  },
+  "Ciudad Nezahualcóyotl, Estado de México, México": {
+    "lat": 19.4079028,
+    "lon": -99.0181547
+  },
+  "Tuxtla Gutiérrez, Chiapas, México": {
+    "lat": 16.753801,
+    "lon": -93.115959
+  },
+  "Santiago de Querétaro, Querétaro, México": {
+    "lat": 20.5922997,
+    "lon": -100.3917424
+  },
+  "Tezoyuca, Estado de México, México": {
+    "lat": 19.5902244,
+    "lon": -98.9079359
+  },
+  "Córdoba, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.8944704,
+    "lon": -96.9352891
+  },
+  "Monterrey, Nuevo León, México": {
+    "lat": 25.6802019,
+    "lon": -100.315258
+  },
+  "AV ADOLFO  RUIZ  CORTINES, Las Giraldas, Centro, Villahermosa, Tabasco, 86038, México": {
+    "lat": 17.9884657,
+    "lon": -92.9366326
+  },
+  "Villahermosa, Tabasco, México": {
+    "lat": 17.9884657,
+    "lon": -92.9366326
+  },
+  "Cosamaloapan, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.364414,
+    "lon": -95.7965793
+  },
+  "Naucalpan de Juárez, Estado de México, México": {
+    "lat": 19.4788356,
+    "lon": -99.2327986
+  },
+  "Chihuahua, Chihuahua, México": {
+    "lat": 28.6368669,
+    "lon": -106.076745
+  },
+  "Toluca de Lerdo, Estado de México, México": {
+    "lat": 19.292545,
+    "lon": -99.6569007
+  },
+  "Cancún, Quintana Roo, México": {
+    "lat": 21.1527467,
+    "lon": -86.8425761
+  },
+  "Culiacán Rosales, Sinaloa, México": {
+    "lat": 24.7978965,
+    "lon": -107.393395
+  },
+  "Mazatlán, Sinaloa, México": {
+    "lat": 23.2035785,
+    "lon": -106.4208391
+  },
+  "Ciudad del Carmen, Campeche, México": {
+    "lat": 18.651739,
+    "lon": -91.81492
+  },
+  "Ciudad de México, Ciudad de México, México": {
+    "lat": 19.4326296,
+    "lon": -99.1331785
+  },
+  "Fresnillo, Zacatecas, México": {
+    "lat": 23.1811278,
+    "lon": -102.8729073
+  },
+  "Cozumel, Quintana Roo, México": {
+    "lat": 20.4320599,
+    "lon": -86.92069058377268
+  },
+  "Ciudad Obregón, Sonora, México": {
+    "lat": 27.4846619,
+    "lon": -109.9337782
+  },
+  "Texcoco de Mora, Estado de México, México": {
+    "lat": 19.5144327,
+    "lon": -98.8821254
+  },
+  "San Juan del Rio, Querétaro, México": {
+    "lat": 20.387046249999997,
+    "lon": -100.01196274827622
+  },
+  "Orizaba, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.8497366,
+    "lon": -97.1060062
+  },
+  "Hidalgo del Parral, Chihuahua, México": {
+    "lat": 27.11538475,
+    "lon": -105.76428799772901
+  },
+  "Ciudad Apodaca, Nuevo León, México": {
+    "lat": 25.7816542,
+    "lon": -100.1887501
+  },
+  "Heroica Matamoros, Tamaulipas, México": {
+    "lat": 25.8810158,
+    "lon": -97.5064866
+  },
+  "Juárez, Chihuahua, México": {
+    "lat": 31.7372575,
+    "lon": -106.485655
+  },
+  "San Cristóbal de las Casas, Chiapas, México": {
+    "lat": 16.735377,
+    "lon": -92.63873
+  },
+  "Morelia, Michoacán de Ocampo, México": {
+    "lat": 19.6546004,
+    "lon": -101.26237972291207
+  },
+  "Puerto Vallarta, Jalisco, México": {
+    "lat": 20.6407176,
+    "lon": -105.220306
+  },
+  "Veracruz, Veracruz de Ignacio de la Llave, México": {
+    "lat": 19.2003429,
+    "lon": -96.1383572
+  },
+  "Zacatecas, Zacatecas, México": {
+    "lat": 22.7753891,
+    "lon": -102.5722706
+  },
+  "Chilpancingo de los Bravo, Guerrero, México": {
+    "lat": 17.3919748,
+    "lon": -99.7428629297313
+  },
+  "San Andrés Tuxtla, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.4633672,
+    "lon": -95.19831533920046
+  },
+  "Celaya, Guanajuato, México": {
+    "lat": 20.522285099999998,
+    "lon": -100.83077392892065
+  },
+  "Navojoa, Sonora, México": {
+    "lat": 27.0721872,
+    "lon": -109.4438227
+  },
+  "San Francisco de Campeche, Campeche, México": {
+    "lat": 19.8381215,
+    "lon": -90.5198253
+  },
+  "Metepec, Estado de México, México": {
+    "lat": 19.25113375,
+    "lon": -99.5937281303492
+  },
+  "Zumpango, Estado de México, México": {
+    "lat": 19.81293675,
+    "lon": -99.08180953352705
+  },
+  "Ciudad Valles, San Luis Potosí, México": {
+    "lat": 22.075792399999997,
+    "lon": -99.07337577278943
+  },
+  "Minatitlán, Veracruz de Ignacio de la Llave, México": {
+    "lat": 17.992773,
+    "lon": -94.5567103
+  },
+  "Ciudad Acuña, Coahuila de Zaragoza, México": {
+    "lat": 29.3248796,
+    "lon": -100.9322287
+  },
+  "San Pedro Garza García, Nuevo León, México": {
+    "lat": 25.65271255,
+    "lon": -100.37223790945575
+  },
+  "Cuauhtémoc, Chihuahua, México": {
+    "lat": 28.4009579,
+    "lon": -106.8665305
+  },
+  "Oaxaca de Juárez, Oaxaca, México": {
+    "lat": 17.096586799999997,
+    "lon": -96.72078156904958
+  },
+  "Los Mochis, Sinaloa, México": {
+    "lat": 25.7928058,
+    "lon": -108.990188
+  },
+  "Tehuacán, Puebla, México": {
+    "lat": 18.465801149999997,
+    "lon": -97.39783479972402
+  },
+  "Piedras Negras, Coahuila de Zaragoza, México": {
+    "lat": 28.704596,
+    "lon": -100.5167137
+  },
+  "Valle de Chalco Solidaridad, Estado de México, México": {
+    "lat": 19.282153,
+    "lon": -98.9416122
+  },
+  "Chetumal, Quintana Roo, México": {
+    "lat": 18.5081738,
+    "lon": -88.297144
+  },
+  "Coacalco de Berriozabal, Estado de México, México": {
+    "lat": 19.6359452,
+    "lon": -99.0948573
+  },
+  "Acayucan, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.0281048,
+    "lon": -95.03593818139205
+  },
+  "Playa del Carmen, Quintana Roo, México": {
+    "lat": 20.6308643,
+    "lon": -87.0779503
+  },
+  "Tepic, Nayarit, México": {
+    "lat": 21.5119156,
+    "lon": -104.8915889
+  },
+  "Boca del Río, Veracruz de Ignacio de la Llave, México": {
+    "lat": 19.11290675,
+    "lon": -96.11184810632824
+  },
+  "Coatzacoalcos, Veracruz de Ignacio de la Llave, México": {
+    "lat": 18.1405019,
+    "lon": -94.4344003
+  },
+  "San Miguel de Allende, Guanajuato, México": {
+    "lat": 20.9130501,
+    "lon": -100.73566002666199
+  },
+  "Tlajomulco de Zúñiga, Jalisco, México": {
+    "lat": 20.48187375,
+    "lon": -103.40050966382874
+  },
+  "Guadalajara, Jalisco, México": {
+    "lat": 20.6720375,
+    "lon": -103.338396
+  },
+  "Ciudad de Villa de Álvarez, Colima, México": {
+    "lat": 19.27894585,
+    "lon": -103.75973739570863
+  },
+  "Hermosillo, Sonora, México": {
+    "lat": 29.0948207,
+    "lon": -110.9692202
+  },
+  "San Nicolás de los Garza, Nuevo León, México": {
+    "lat": 25.7558021,
+    "lon": -100.289648
+  },
+  "Guadalupe, Nuevo León, México": {
+    "lat": 25.6751114,
+    "lon": -100.2151753
+  },
+  "Sin Ciudad, Estado de México, México": {
+    "lat": null,
+    "lon": null
+  },
+  "Ciudad Madero, Tamaulipas, México": {
+    "lat": 22.278368,
+    "lon": -97.82428606900629
+  },
+  "Chimalhuacán, Estado de México, México": {
+    "lat": 19.41775105,
+    "lon": -98.95751685948807
+  },
+  "San Luis Río Colorado, Sonora, México": {
+    "lat": 32.4822164,
+    "lon": -114.7816893
+  },
+  "Heroica Nogales, Sonora, México": {
+    "lat": 31.3285057,
+    "lon": -110.9450472
+  },
+  "Guasave, Sinaloa, México": {
+    "lat": 25.5046381,
+    "lon": -108.539960314508
+  },
+  "Ensenada, Baja California, México": {
+    "lat": 31.8658887,
+    "lon": -116.602983
+  },
+  "San Luis Potosí, San Luis Potosí, México": {
+    "lat": 22.1516472,
+    "lon": -100.9763993
+  },
+  "Zapopan, Jalisco, México": {
+    "lat": 20.7211203,
+    "lon": -103.3913671
+  },
+  "Nuevo Laredo, Tamaulipas, México": {
+    "lat": 27.4930246,
+    "lon": -99.507425
+  },
+  "Tonalá, Jalisco, México": {
+    "lat": 20.6241367,
+    "lon": -103.2421263
+  },
+  "Ciudad Adolfo López Mateos, Estado de México, México": {
+    "lat": 19.5733975,
+    "lon": -99.243949
+  },
+  "Tultitlán de Mariano Escobedo, Estado de México, México": {
+    "lat": 19.635906249999998,
+    "lon": -99.13795469946498
+  },
+  "Tecámac de Felipe Villanueva, Estado de México, México": {
+    "lat": 19.7115011,
+    "lon": -98.968354
+  },
+  "Ciudad General Escobedo, Nuevo León, México": {
+    "lat": 25.808517,
+    "lon": -100.3224334
+  },
+  "Cuautitlán, Estado de México, México": {
+    "lat": 19.705518249999997,
+    "lon": -99.16662568774402
+  },
+  "Tlalnepantla de Baz, Estado de México, México": {
+    "lat": 19.546490249999998,
+    "lon": -99.1899352247449
+  },
+  "Huixquilucan de Degollado, Estado de México, México": {
+    "lat": 19.3598819,
+    "lon": -99.3514655
+  },
+  "Chalco de Díaz Covarrubias, Estado de México, México": {
+    "lat": 19.2612215,
+    "lon": -98.8958362
+  },
+  "Apizaco, Tlaxcala, México": {
+    "lat": 19.42643095,
+    "lon": -98.07743344645611
+  },
+  "Irapuato, Guanajuato, México": {
+    "lat": 20.6758761,
+    "lon": -101.3521052
+  },
+  "Comalcalco, Tabasco, México": {
+    "lat": 18.2615076,
+    "lon": -93.2231523
+  },
+  "Mexicali, Baja California, México": {
+    "lat": 32.6405247,
+    "lon": -115.474899
+  },
+  "Tijuana, Baja California, México": {
+    "lat": 32.5317397,
+    "lon": -117.019529
+  },
+  "Guamúchil, Sinaloa, México": {
+    "lat": 25.4575492,
+    "lon": -108.0755437
+  },
+  "San Juan Bautista Tuxtepec, Oaxaca, México": {
+    "lat": 18.0874632,
+    "lon": -96.1227767
+  },
+  "Uriangato, Guanajuato, México": {
+    "lat": 20.117735,
+    "lon": -101.13804770804822
+  },
+  "Salamanca, Guanajuato, México": {
+    "lat": 20.6511359,
+    "lon": -101.16676697826568
+  },
+  "Bahias de Huatulco, Oaxaca, México": {
+    "lat": 15.7759827,
+    "lon": -96.25869871122916
+  },
+  "Acapulco de Juárez, Guerrero, México": {
+    "lat": 16.8680495,
+    "lon": -99.8940182
+  },
+  "Heroica Puebla de Zaragoza, Puebla, México": {
+    "lat": 19.0437196,
+    "lon": -98.1981486
+  },
+  "Marfil, Guanajuato, México": {
+    "lat": 20.9942943,
+    "lon": -101.2883689
+  },
+  "Victoria de Durango, Durango, México": {
+    "lat": 24.022008,
+    "lon": -104.654741
+  },
+  "Cuautlancingo, Puebla, México": {
+    "lat": 19.119366,
+    "lon": -98.2491623581376
+  },
+  "Delicias, Chihuahua, México": {
+    "lat": 28.1227078,
+    "lon": -105.46848950381103
+  },
+  "Monclova, Coahuila de Zaragoza, México": {
+    "lat": 26.8792399,
+    "lon": -101.19923358589679
+  },
+  "Torreón, Coahuila de Zaragoza, México": {
+    "lat": 25.542698,
+    "lon": -103.410512
+  },
+  "Aguascalientes, Aguascalientes, México": {
+    "lat": 21.880487,
+    "lon": -102.2967195
+  },
+  "Poza Rica de Hidalgo, Veracruz de Ignacio de la Llave, México": {
+    "lat": 20.537657449999998,
+    "lon": -97.44512479987276
+  },
+  "Cabo San Lucas, Baja California Sur, México": {
+    "lat": 22.8938884,
+    "lon": -109.92006
+  },
+  "Mineral de la Reforma, Hidalgo, México": {
+    "lat": 20.06063885,
+    "lon": -98.73057242363191
+  },
+  "Paraíso, Tabasco, México": {
+    "lat": 18.362305499999998,
+    "lon": -93.18835870012157
+  },
+  "Gómez Palacio, Durango, México": {
+    "lat": 25.5732473,
+    "lon": -103.494779
+  },
+  "Manzanillo, Colima, México": {
+    "lat": 19.0506256,
+    "lon": -104.3159957
+  },
+  "Tulancingo, Hidalgo, México": {
+    "lat": 20.0839585,
+    "lon": -98.3635381
+  },
+  "Tlaxcala de Xicohténcatl, Tlaxcala, México": {
+    "lat": 19.3167101,
+    "lon": -98.2386138
+  },
+  "Altamira, Tamaulipas, México": {
+    "lat": 22.5630208,
+    "lon": -98.11651838883341
+  },
+  "Cadereyta Jiménez, Nuevo León, México": {
+    "lat": 25.517336999999998,
+    "lon": -99.87117351720661
+  },
+  "Ciudad Victoria, Tamaulipas, México": {
+    "lat": 23.7389846,
+    "lon": -99.1441352
+  },
+  "Tula de Allende, Hidalgo, México": {
+    "lat": 20.048948699999997,
+    "lon": -99.37295616011426
+  },
+  "Mérida, Yucatán, México": {
+    "lat": 20.9670759,
+    "lon": -89.6237402
+  },
+  "Umán, Yucatán, México": {
+    "lat": 20.8471315,
+    "lon": -89.76791377224616
+  },
+  "Ticul, Yucatán, México": {
+    "lat": 20.36438225,
+    "lon": -89.5543068153996
+  },
+  "Apetatitlán de Antonio Carvajal, Tlaxcala, México": {
+    "lat": 19.3505173,
+    "lon": -98.19120205454091
+  },
+  "Soledad de Graciano Sánchez, San Luis Potosí, México": {
+    "lat": 22.297055450000002,
+    "lon": -100.86719560926427
+  },
+  "Oluta, Veracruz de Ignacio de la Llave, México": {
+    "lat": 17.895933749999998,
+    "lon": -94.90486831025073
+  },
+  "Ixtapaluca, Estado de México, México": {
+    "lat": 19.32929,
+    "lon": -98.80827450406431
+  },
+  "Reynosa, Tamaulipas, México": {
+    "lat": 26.0907673,
+    "lon": -98.2788191
+  },
+  "Playas de Rosarito, Baja California, México": {
+    "lat": 32.365166,
+    "lon": -117.0557923
+  },
+  "San Pedro Cholula, Puebla, México": {
+    "lat": 19.0724114,
+    "lon": -98.32236707919591
+  },
+  "Heroica Guaymas, Sonora, México": {
+    "lat": 27.9216441,
+    "lon": -110.8994059
+  },
+  "José Cardel, Veracruz de Ignacio de la Llave, México": {
+    "lat": 19.3711744,
+    "lon": -96.3774818
+  },
+  "Túxpam de Rodríguez Cano, Veracruz de Ignacio de la Llave, México": {
+    "lat": 20.9518378,
+    "lon": -97.4045371
+  },
+  "García, Nuevo León, México": {
+    "lat": 25.8054661,
+    "lon": -100.63964675280096
+  },
+  "Ixtlán del Río, Nayarit, México": {
+    "lat": 21.02905655,
+    "lon": -104.32773695848007
+  },
+  "Huimanguillo, Tabasco, México": {
+    "lat": 17.7620967,
+    "lon": -93.66344080511583
+  },
+  "Macuspana, Tabasco, México": {
+    "lat": 17.8556822,
+    "lon": -92.4223905822218
+  },
+  "Taxco de Alarcón, Guerrero, México": {
+    "lat": 18.5565446,
+    "lon": -99.6052838
+  },
+  "Iguala de la Independencia, Guerrero, México": {
+    "lat": 18.3466358,
+    "lon": -99.5376944
+  },
+  "Tlaquepaque, Jalisco, México": {
+    "lat": 20.6397718,
+    "lon": -103.3120428
+  },
+  "Lagos de Moreno, Jalisco, México": {
+    "lat": 21.533030099999998,
+    "lon": -101.81995710355704
+  },
+  "Ciudad Mante, Tamaulipas, México": {
+    "lat": 22.7411278,
+    "lon": -98.9714093
+  },
+  "nan, Total General, México": {
+    "lat": null,
+    "lon": null
+  },
+  "Ecatepec de Morelos, Estado de México, México": {
+    "lat": 19.5994083,
+    "lon": -99.0487281
+  }
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Desempeño de Tiendas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
+        .map-container {
+            height: 500px;
+            width: 100%;
+            border-radius: 0 0 8px 8px;
+        }
+        .stats-card {
+            height: 100%;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #343a40;
+        }
+        .nav-pills .nav-link {
+            color: #343a40;
+            margin-right: 5px;
+        }
+        .table-responsive {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .positive-value {
+            color: green;
+            font-weight: bold;
+        }
+        .negative-value {
+            color: red;
+            font-weight: bold;
+        }
+        .neutral-value {
+            color: orange;
+            font-weight: bold;
+        }
+        .dashboard-controls {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12">
+                <div class="header text-center">
+                    <h1>Dashboard de Desempeño de Tiendas</h1>
+                    <p class="lead">Análisis visual de rendimiento por región, estado y tienda</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="dashboard-controls">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="month-select" class="form-label">Mes:</label>
+                            <select id="month-select" class="form-select">
+                                <!-- Options will be added dynamically via JavaScript -->
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="metric-select" class="form-label">Métrica:</label>
+                            <select id="metric-select" class="form-select">
+                                <option value="var_ventas">Variación Ventas</option>
+                                <option value="var_ov">Variación Órdenes</option>
+                                <option value="var_ticket">Variación Ticket</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="view-select" class="form-label">Vista:</label>
+                            <select id="view-select" class="form-select">
+                                <option value="map">Mapa</option>
+                                <option value="heatmap">Mapa de Calor</option>
+                                <option value="combined">Vista Combinada</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content area -->
+        <div class="row">
+            <!-- Map & Visualizations (Left Column) -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <span id="map-title">Mapa de Desempeño - Todos los Meses</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <iframe id="map-frame" class="map-container" src="maps/mapa_combined.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!-- Performance by Format -->
+                <div class="card">
+                    <div class="card-header">Desempeño por Formato</div>
+                    <div class="card-body">
+                        <canvas id="format-chart" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics & Rankings (Right Column) -->
+            <div class="col-lg-4">
+                <!-- General Statistics -->
+                <div class="card stats-card">
+                    <div class="card-header">Estadísticas Generales</div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <tbody id="general-stats">
+                                <!-- Will be populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top & Bottom Performers -->
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-tabs" id="performers-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="top-tab" data-bs-toggle="tab" data-bs-target="#top-performers" type="button" role="tab" aria-controls="top-performers" aria-selected="true">Top 5</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="bottom-tab" data-bs-toggle="tab" data-bs-target="#bottom-performers" type="button" role="tab" aria-controls="bottom-performers" aria-selected="false">Bottom 5</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="performers-tab-content">
+                            <div class="tab-pane fade show active" id="top-performers" role="tabpanel" aria-labelledby="top-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Sucursal</th>
+                                                <th>Formato</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="top-performers-table">
+                                            <!-- Will be populated dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bottom-performers" role="tabpanel" aria-labelledby="bottom-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Sucursal</th>
+                                                <th>Formato</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="bottom-performers-table">
+                                            <!-- Will be populated dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance by Region -->
+                <div class="card">
+                    <div class="card-header">Desempeño por Región</div>
+                    <div class="card-body">
+                        <canvas id="region-chart" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Trends -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">Tendencias Mensuales</div>
+                    <div class="card-body">
+                        <canvas id="trend-chart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+    <script>
+        // Sample data - This would be replaced with real data in a production environment
+        const sampleData = {"months": ["Febrero", "Enero"], "metrics": {"var_ventas": {"label": "Variación Ventas", "values": [1.1647834274952917, 0.9555555555555559], "byFormat": {"Coppel": [-2.994936708860759, -2.1329113924050636], "Devlyn": [1.101550387596899, 0.813953488372093], "Sears": [6.7171875000000005, 5.65625], "Total General": [-1.1, -1.1]}, "byRegion": {"Centro": [1.7375999999999996, 3.256451612903226], "Cerrada": [-86.4, -68.85], "E-commerce Devlyn": [-28.7, -14.3], "Metropolitana": [-1.5934782608695652, -3.5010869565217386], "Noreste": [3.299, 3.292], "Noroeste": [4.615178571428572, 6.371428571428572], "Sur": [-1.8454545454545457, -4.686868686868687], "Total General": [-1.1, -1.1]}, "topPerformers": [{"name": "LIVERPOOL PACHUCA", "format": "Devlyn", "value": 538.9}, {"name": "SEARS CENTRO (LA PAZ)", "format": "Sears", "value": 171.0}, {"name": "PLAZA DEL SOL TUXTLA", "format": "Devlyn", "value": 117.8}, {"name": "COPPEL GUADALUPE VICTORIA (TENANCINGO)", "format": "Coppel", "value": 102.3}, {"name": "HIPER LAS PALMAS CD VICTORIA", "format": "Devlyn", "value": 98.9}], "bottomPerformers": [{"name": "CD CUAUHTEMOC CENTRO", "format": "Devlyn", "value": -98.8}, {"name": "DEVLYN PLAZA NEZA", "format": "Devlyn", "value": -86.4}, {"name": "MARINA MANZANILLO", "format": "Devlyn", "value": -74.9}, {"name": "COPPEL AVIACION (CD DEL CARMEN)", "format": "Coppel", "value": -74.3}, {"name": "SEARS INTERLOMAS D BARRANCA", "format": "Sears", "value": -66.2}]}, "var_ov": {"label": "Variación Órdenes", "values": [-2.532580037664783, -1.3265037593984963], "byFormat": {"Coppel": [-3.40126582278481, -2.774683544303797], "Devlyn": [-2.890956072351421, -1.3979381443298968], "Sears": [0.7406249999999996, 0.9515625], "Total General": [-4.7, -5.0]}, "byRegion": {"Centro": [-0.3975999999999997, -1.1919354838709677], "Cerrada": [-97.3, 51.5], "E-commerce Devlyn": [-24.7, 0.8], "Metropolitana": [-1.4467391304347827, -4.160869565217391], "Noreste": [-2.5189999999999997, -2.26], "Noroeste": [-1.9285714285714286, 2.366964285714286], "Sur": [-5.731313131313131, -3.6818181818181817], "Total General": [-4.7, -5.0]}, "topPerformers": [{"name": "LIVERPOOL PACHUCA", "format": "Devlyn", "value": 361.0}, {"name": "IXTAPAN DE LA SAL CENTRO", "format": "Devlyn", "value": 125.0}, {"name": "SEARS CENTRO (LA PAZ)", "format": "Sears", "value": 90.0}, {"name": "COPPEL CELAYA", "format": "Coppel", "value": 87.5}, {"name": "MTY. HIPERMART", "format": "Devlyn", "value": 71.9}], "bottomPerformers": [{"name": "DEVLYN PLAZA NEZA", "format": "Devlyn", "value": -97.3}, {"name": "MARINA MANZANILLO", "format": "Devlyn", "value": -73.0}, {"name": "COPPEL OBREGON II SN LUIS COLORADO", "format": "Coppel", "value": -65.8}, {"name": "CD CUAUHTEMOC CENTRO", "format": "Devlyn", "value": -61.5}, {"name": "ACAPULCO CENTRO", "format": "Devlyn", "value": -53.7}]}, "var_ticket": {"label": "Variación Ticket", "values": [5.344067796610169, 5.223684210526316], "byFormat": {"Coppel": [3.049367088607595, 4.854430379746836], "Devlyn": [5.497674418604651, 5.079381443298969], "Sears": [7.271875, 6.571875], "Total General": [3.8, 4.1]}, "byRegion": {"Centro": [2.956, 4.9112], "Cerrada": [403.9, 359.04999999999995], "E-commerce Devlyn": [-5.3, -15.0], "Metropolitana": [0.36086956521739133, 1.7282608695652173], "Noreste": [7.761, 6.185], "Noroeste": [7.570535714285714, 6.660714285714286], "Sur": [4.127272727272728, -0.6626262626262622], "Total General": [3.8, 4.1]}, "topPerformers": [{"name": "DEVLYN PLAZA NEZA", "format": "Devlyn", "value": 403.9}, {"name": "HIPER LAS PALMAS CD VICTORIA", "format": "Devlyn", "value": 108.4}, {"name": "COPPEL EXPLANADA CULIACAN", "format": "Coppel", "value": 96.7}, {"name": "SEARS ALTABRISA TABASCO", "format": "Sears", "value": 96.1}, {"name": "CHAPUR II GRAN MERIDA II", "format": "Devlyn", "value": 91.7}], "bottomPerformers": [{"name": "CD CUAUHTEMOC CENTRO", "format": "Devlyn", "value": -96.9}, {"name": "COPPEL CELAYA", "format": "Coppel", "value": -69.5}, {"name": "PUNTO LA PAZ", "format": "Devlyn", "value": -55.5}, {"name": "COPPEL AVIACION (CD DEL CARMEN)", "format": "Coppel", "value": -51.7}, {"name": "COPPEL PINO SUAREZ (SILAO)", "format": "Coppel", "value": -49.4}]}}};/*
+            months: ['Enero', 'Febrero'],
+            metrics: {
+                var_ventas: {
+                    label: 'Variación Ventas',
+                    values: [12.5, 8.3],
+                    byFormat: {
+                        'Devlyn': [15.2, 9.1],
+                        'Coppel': [10.8, 7.5],
+                        'Sears': [8.6, 6.8]
+                    },
+                    byRegion: {
+                        'Centro': [14.5, 9.2],
+                        'Sur': [11.2, 7.8],
+                        'Norte': [13.7, 8.9],
+                        'Noroeste': [10.5, 6.9]
+                    },
+                    topPerformers: [
+                        { name: 'GALERIAS URUAPAN', format: 'Devlyn', value: 28.4 },
+                        { name: 'SEARS CENTRO (LA PAZ)', format: 'Sears', value: 74.1 },
+                        { name: 'LA PIEDAD CENTRO', format: 'Devlyn', value: 37.4 },
+                        { name: 'COPPEL CELAYA', format: 'Coppel', value: 67.1 },
+                        { name: 'DEVLYN CHEDRAUI (TAPACHULA)', format: 'Devlyn', value: 29.6 }
+                    ],
+                    bottomPerformers: [
+                        { name: 'LEON CENTRO II', format: 'Devlyn', value: -24.1 },
+                        { name: 'DELYN ZENTRALIA (COLIMA)', format: 'Devlyn', value: -27.7 },
+                        { name: 'COPPEL CARDENAS CENTRO (TABASCO)', format: 'Coppel', value: -29.7 },
+                        { name: 'ADUANA I CENTRO (TAMPICO)', format: 'Devlyn', value: -28.8 },
+                        { name: 'AGUASCALIENTES MADERO', format: 'Devlyn', value: -40.0 }
+                    ]
+                },
+                var_ov: {
+                    label: 'Variación Órdenes',
+                    values: [5.2, 3.1],
+                    byFormat: {
+                        'Devlyn': [6.8, 4.2],
+                        'Coppel': [4.5, 2.8],
+                        'Sears': [3.9, 1.5]
+                    },
+                    byRegion: {
+                        'Centro': [6.1, 3.8],
+                        'Sur': [5.7, 3.2],
+                        'Norte': [4.8, 2.9],
+                        'Noroeste': [4.1, 2.3]
+                    },
+                    topPerformers: [
+                        { name: 'SEARS CENTRO (LA PAZ)', format: 'Sears', value: 59.6 },
+                        { name: 'COPPEL CELAYA', format: 'Coppel', value: 34.5 },
+                        { name: 'ACAPULCO CENTRO', format: 'Devlyn', value: 53.1 },
+                        { name: 'LA PIEDAD CENTRO', format: 'Devlyn', value: 17.0 },
+                        { name: 'ACAPULCO SEARS', format: 'Sears', value: 17.9 }
+                    ],
+                    bottomPerformers: [
+                        { name: 'LEON CENTRO II', format: 'Devlyn', value: -29.8 },
+                        { name: 'DELYN ZENTRALIA (COLIMA)', format: 'Devlyn', value: -29.6 },
+                        { name: 'ACAPULCO GRAN PLAZA', format: 'Devlyn', value: -23.6 },
+                        { name: 'ADUANA I CENTRO (TAMPICO)', format: 'Devlyn', value: -31.8 },
+                        { name: 'AGUASCALIENTES MADERO', format: 'Devlyn', value: -52.7 }
+                    ]
+                },
+                var_ticket: {
+                    label: 'Variación Ticket',
+                    values: [7.8, 5.2],
+                    byFormat: {
+                        'Devlyn': [9.1, 6.5],
+                        'Coppel': [7.2, 4.8],
+                        'Sears': [6.3, 3.9]
+                    },
+                    byRegion: {
+                        'Centro': [8.3, 5.7],
+                        'Sur': [7.5, 5.1],
+                        'Norte': [7.9, 5.5],
+                        'Noroeste': [7.1, 4.7]
+                    },
+                    topPerformers: [
+                        { name: 'ACAPULCO GRAN PLAZA', format: 'Devlyn', value: 43.4 },
+                        { name: 'AGUASCALIENTES VILLASUNCION', format: 'Devlyn', value: 39.1 },
+                        { name: 'ACAPULCO SEARS', format: 'Sears', value: 17.5 },
+                        { name: 'LA PIEDAD CENTRO', format: 'Devlyn', value: 17.5 },
+                        { name: 'AGUASCALIENTES MADERO', format: 'Devlyn', value: 26.6 }
+                    ],
+                    bottomPerformers: [
+                        { name: 'ACAPULCO CENTRO', format: 'Devlyn', value: -20.6 },
+                        { name: 'ADANA AGUASCALIENTES', format: 'Devlyn', value: -1.8 },
+                        { name: 'COPPEL CARDENAS CENTRO (TABASCO)', format: 'Coppel', value: -26.9 },
+                        { name: 'COPPEL CELAYA', format: 'Coppel', value: -69.5 },
+                        { name: 'DELYN ZENTRALIA (COLIMA)', format: 'Devlyn', value: -28.2 }
+                    ]
+                }
+            }
+        };
+
+        // Populate month selector
+        const monthSelect = document.getElementById('month-select');
+        sampleData.months.forEach(month => {
+            const option = document.createElement('option');
+            option.value = month.toLowerCase();
+            option.textContent = month;
+            monthSelect.appendChild(option);
+        });
+        // Add combined option
+        const combinedOption = document.createElement('option');
+        combinedOption.value = 'combined';
+        combinedOption.textContent = 'Todos los Meses';
+        monthSelect.appendChild(combinedOption);
+        monthSelect.value = 'combined';
+
+        // Update map when selections change
+        function updateDashboard() {
+            const month = monthSelect.value;
+            const metric = metricSelect.value;
+            const view = viewSelect.value;
+            
+            // Update map title
+            let mapTitle = '';
+            if (month === 'combined') {
+                mapTitle = `${view === 'heatmap' ? 'Mapa de Calor' : 'Mapa de Desempeño'} - Todos los Meses`;
+            } else {
+                const monthName = sampleData.months.find(m => m.toLowerCase() === month);
+                mapTitle = `${view === 'heatmap' ? 'Mapa de Calor' : 'Mapa de Desempeño'} - ${monthName}`;
+            }
+            document.getElementById('map-title').textContent = mapTitle;
+            
+            // Update map iframe source
+            let mapSrc = '';
+            if (view === 'heatmap') {
+                mapSrc = `maps/heatmap_${metric}.html`;
+            } else if (view === 'combined' || month === 'combined') {
+                mapSrc = 'maps/mapa_combined.html';
+            } else {
+                mapSrc = `maps/${month === 'enero' ? 'dashboard_enero.html' : 'dashboard_febrero.html'}`;
+            }
+            document.getElementById('map-frame').src = mapSrc;
+            
+            // Update statistics and charts
+            updateStatistics(month, metric);
+            updatePerformers(month, metric);
+            updateCharts(month, metric);
+        }
+
+        const metricSelect = document.getElementById('metric-select');
+        const viewSelect = document.getElementById('view-select');
+        
+        monthSelect.addEventListener('change', updateDashboard);
+        metricSelect.addEventListener('change', updateDashboard);
+        viewSelect.addEventListener('change', updateDashboard);
+
+        // Update statistics tables
+        function updateStatistics(month, metric) {
+            const statsTable = document.getElementById('general-stats');
+            statsTable.innerHTML = '';
+            
+            // Get data for the selected month and metric
+            let metricData;
+            if (month === 'combined') {
+                // Average across all months
+                metricData = {
+                    label: sampleData.metrics[metric].label,
+                    value: sampleData.metrics[metric].values.reduce((a, b) => a + b, 0) / sampleData.metrics[metric].values.length
+                };
+            } else {
+                const monthIndex = sampleData.months.findIndex(m => m.toLowerCase() === month);
+                metricData = {
+                    label: sampleData.metrics[metric].label,
+                    value: sampleData.metrics[metric].values[monthIndex]
+                };
+            }
+            
+            // Add main metric
+            const metricRow = document.createElement('tr');
+            metricRow.innerHTML = `
+                <td><strong>${metricData.label}</strong></td>
+                <td class="${metricData.value >= 0 ? 'positive-value' : 'negative-value'}">${metricData.value.toFixed(1)}%</td>
+            `;
+            statsTable.appendChild(metricRow);
+            
+            // Add other metrics
+            Object.keys(sampleData.metrics).forEach(m => {
+                if (m !== metric) {
+                    let otherMetricValue;
+                    if (month === 'combined') {
+                        otherMetricValue = sampleData.metrics[m].values.reduce((a, b) => a + b, 0) / sampleData.metrics[m].values.length;
+                    } else {
+                        const monthIndex = sampleData.months.findIndex(mon => mon.toLowerCase() === month);
+                        otherMetricValue = sampleData.metrics[m].values[monthIndex];
+                    }
+                    
+                    const otherRow = document.createElement('tr');
+                    otherRow.innerHTML = `
+                        <td>${sampleData.metrics[m].label}</td>
+                        <td class="${otherMetricValue >= 0 ? 'positive-value' : 'negative-value'}">${otherMetricValue.toFixed(1)}%</td>
+                    `;
+                    statsTable.appendChild(otherRow);
+                }
+            });
+        }
+
+        // Update performers tables
+        function updatePerformers(month, metric) {
+            // For simplicity, we'll use the same performers regardless of month in this demo
+            const topTable = document.getElementById('top-performers-table');
+            const bottomTable = document.getElementById('bottom-performers-table');
+            
+            topTable.innerHTML = '';
+            bottomTable.innerHTML = '';
+            
+            // Populate top performers
+            sampleData.metrics[metric].topPerformers.forEach(performer => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${performer.name}</td>
+                    <td>${performer.format}</td>
+                    <td class="positive-value">${performer.value.toFixed(1)}%</td>
+                `;
+                topTable.appendChild(row);
+            });
+            
+            // Populate bottom performers
+            sampleData.metrics[metric].bottomPerformers.forEach(performer => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${performer.name}</td>
+                    <td>${performer.format}</td>
+                    <td class="negative-value">${performer.value.toFixed(1)}%</td>
+                `;
+                bottomTable.appendChild(row);
+            });
+        }
+
+        // Charts
+        let formatChart, regionChart, trendChart;
+
+        function updateCharts(month, metric) {
+            const formatCtx = document.getElementById('format-chart').getContext('2d');
+            const regionCtx = document.getElementById('region-chart').getContext('2d');
+            const trendCtx = document.getElementById('trend-chart').getContext('2d');
+            
+            // Destroy existing charts if they exist
+            if (formatChart) formatChart.destroy();
+            if (regionChart) regionChart.destroy();
+            if (trendChart) trendChart.destroy();
+            
+            // Format chart data
+            const formatData = {
+                labels: Object.keys(sampleData.metrics[metric].byFormat),
+                datasets: []
+            };
+            
+            if (month === 'combined') {
+                // Show all months
+                sampleData.months.forEach((m, i) => {
+                    formatData.datasets.push({
+                        label: m,
+                        data: Object.values(sampleData.metrics[metric].byFormat).map(values => values[i]),
+                        backgroundColor: i === 0 ? 'rgba(75, 192, 192, 0.6)' : 'rgba(153, 102, 255, 0.6)',
+                        borderColor: i === 0 ? 'rgba(75, 192, 192, 1)' : 'rgba(153, 102, 255, 1)',
+                        borderWidth: 1
+                    });
+                });
+            } else {
+                // Show selected month
+                const monthIndex = sampleData.months.findIndex(m => m.toLowerCase() === month);
+                formatData.datasets.push({
+                    label: sampleData.months[monthIndex],
+                    data: Object.values(sampleData.metrics[metric].byFormat).map(values => values[monthIndex]),
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                });
+            }
+            
+            // Region chart data
+            const regionData = {
+                labels: Object.keys(sampleData.metrics[metric].byRegion),
+                datasets: []
+            };
+            
+            if (month === 'combined') {
+                // Show all months
+                sampleData.months.forEach((m, i) => {
+                    regionData.datasets.push({
+                        label: m,
+                        data: Object.values(sampleData.metrics[metric].byRegion).map(values => values[i]),
+                        backgroundColor: i === 0 ? 'rgba(255, 159, 64, 0.6)' : 'rgba(255, 99, 132, 0.6)',
+                        borderColor: i === 0 ? 'rgba(255, 159, 64, 1)' : 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    });
+                });
+            } else {
+                // Show selected month
+                const monthIndex = sampleData.months.findIndex(m => m.toLowerCase() === month);
+                regionData.datasets.push({
+                    label: sampleData.months[monthIndex],
+                    data: Object.values(sampleData.metrics[metric].byRegion).map(values => values[monthIndex]),
+                    backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    borderWidth: 1
+                });
+            }
+            
+            // Trend chart data
+            const trendData = {
+                labels: sampleData.months,
+                datasets: [{
+                    label: sampleData.metrics[metric].label,
+                    data: sampleData.metrics[metric].values,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2,
+                    tension: 0.1
+                }]
+            };
+            
+            // Create charts
+            formatChart = new Chart(formatCtx, {
+                type: 'bar',
+                data: formatData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: `${sampleData.metrics[metric].label} por Formato`
+                        }
+                    }
+                }
+            });
+            
+            regionChart = new Chart(regionCtx, {
+                type: 'bar',
+                data: regionData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: `${sampleData.metrics[metric].label} por Región`
+                        }
+                    }
+                }
+            });
+            
+            trendChart = new Chart(trendCtx, {
+                type: 'line',
+                data: trendData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: `Tendencia Mensual - ${sampleData.metrics[metric].label}`
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize dashboard with default values
+        updateDashboard();
+    </script>
+</body>
+</html>
