@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Desempeño de Tiendas</title>
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- PapaParse for CSV -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .map-container {
+            height: 500px;
+            width: 100%;
+        }
+        .positive-value {
+            color: green;
+            font-weight: bold;
+        }
+        .negative-value {
+            color: red;
+            font-weight: bold;
+        }
+        .chart-container {
+            height: 300px;
+            width: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-6">
+        <header class="bg-gray-800 text-white p-6 mb-6 rounded shadow-md">
+            <h1 class="text-2xl font-bold text-center">Dashboard de Desempeño de Tiendas</h1>
+            <p class="text-center">Análisis visual de rendimiento por región, estado y tienda</p>
+        </header>
+        
+        <!-- File Upload Section -->
+        <div class="bg-white p-4 mb-6 rounded shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Cargar archivos CSV:</label>
+                    <input type="file" id="csv-file" accept=".csv" multiple class="block w-full border border-gray-300 rounded p-2">
+                    <div class="text-sm mt-1 text-gray-500">
+                        Selecciona los archivos "datosEne2025.csv", "datosFeb2025.csv", etc.
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Cargar GeoJSON:</label>
+                    <input type="file" id="geojson-file" accept=".geojson,.json" class="block w-full border border-gray-300 rounded p-2">
+                    <div class="text-sm mt-1 text-gray-500">
+                        Selecciona el archivo "mexico_estados.geojson"
+                    </div>
+                </div>
+            </div>
+            
+            <div id="files-info" class="mt-4 hidden">
+                <h3 class="font-medium">Archivos cargados:</h3>
+                <ul id="files-list" class="text-sm list-disc ml-5"></ul>
+            </div>
+            
+            <div id="error-message" class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-4 hidden"></div>
+        </div>
+        
+        <!-- Loading indicator -->
+        <div id="loading" class="text-center py-10 hidden">
+            <p class="text-xl">Cargando datos...</p>
+        </div>
+        
+        <!-- Dashboard content - initially hidden -->
+        <div id="dashboard-content" class="hidden">
+            <!-- Controls -->
+            <div class="bg-white p-4 mb-6 rounded shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label for="month-select" class="block text-sm font-medium mb-2">Mes:</label>
+                        <select id="month-select" class="block w-full border border-gray-300 rounded p-2">
+                            <option value="combined">Todos los Meses</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="metric-select" class="block text-sm font-medium mb-2">Métrica:</label>
+                        <select id="metric-select" class="block w-full border border-gray-300 rounded p-2">
+                            <option value="var_ventas">Variación Ventas</option>
+                            <option value="var_ov">Variación Órdenes</option>
+                            <option value="var_ticket">Variación Ticket</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="view-select" class="block text-sm font-medium mb-2">Vista:</label>
+                        <select id="view-select" class="block w-full border border-gray-300 rounded p-2">
+                            <option value="map">Mapa</option>
+                            <option value="heatmap">Mapa de Calor</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main content -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left column - Map & Format Performance -->
+                <div class="lg:col-span-2">
+                    <!-- Map -->
+                    <div class="bg-white rounded shadow-md mb-6">
+                        <div class="p-4 border-b">
+                            <h2 id="map-title" class="font-bold">Mapa de Desempeño - Todos los Meses</h2>
+                        </div>
+                        <div class="p-0">
+                            <div id="map" class="map-container"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Format Performance Chart -->
+                    <div class="bg-white rounded shadow-md mb-6">
+                        <div class="p-4 border-b">
+                            <h2 class="font-bold">Desempeño por Formato</h2>
+                        </div>
+                        <div class="p-4 chart-container">
+                            <canvas id="format-chart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Monthly Trends -->
+                    <div class="bg-white rounded shadow-md">
+                        <div class="p-4 border-b">
+                            <h2 class="font-bold">Tendencias Mensuales</h2>
+                        </div>
+                        <div class="p-4 chart-container">
+                            <canvas id="trend-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column - Statistics & Rankings -->
+                <div>
+                    <!-- General Statistics -->
+                    <div class="bg-white rounded shadow-md mb-6">
+                        <div class="p-4 border-b">
+                            <h2 class="font-bold">Estadísticas Generales</h2>
+                        </div>
+                        <div class="p-4">
+                            <table class="w-full border-collapse">
+                                <tbody id="general-stats">
+                                    <!-- Will be populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Top & Bottom Performers -->
+                    <div class="bg-white rounded shadow-md mb-6">
+                        <div class="border-b">
+                            <ul class="flex">
+                                <li class="mr-1">
+                                    <button id="top-tab" class="inline-block px-4 py-2 border-b-2 border-blue-500 font-bold">
+                                        Top 5
+                                    </button>
+                                </li>
+                                <li class="mr-1">
+                                    <button id="bottom-tab" class="inline-block px-4 py-2">
+                                        Bottom 5
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4">
+                            <div id="top-performers">
+                                <table class="w-full border-collapse">
+                                    <thead>
+                                        <tr class="border-b">
+                                            <th class="text-left py-2">Sucursal</th>
+                                            <th class="text-left py-2">Formato</th>
+                                            <th class="text-right py-2">Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="top-performers-table">
+                                        <!-- Will be populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="bottom-performers" class="hidden">
+                                <table class="w-full border-collapse">
+                                    <thead>
+                                        <tr class="border-b">
+                                            <th class="text-left py-2">Sucursal</th>
+                                            <th class="text-left py-2">Formato</th>
+                                            <th class="text-right py-2">Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bottom-performers-table">
+                                        <!-- Will be populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance by Region -->
+                    <div class="bg-white rounded shadow-md mb-6">
+                        <div class="p-4 border-b">
+                            <h2 class="font-bold">Desempeño por Región</h2>
+                        </div>
+                        <div class="p-4 chart-container">
+                            <canvas id="region-chart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- States Performance Table -->
+                    <div class="bg-white rounded shadow-md">
+                        <div class="p-4 border-b">
+                            <h2 class="font-bold">Desempeño por Estado</h2>
+                        </div>
+                        <div class="p-4 max-h-96 overflow-y-auto">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr class="border-b">
+                                        <th class="text-left py-2">Estado</th>
+                                        <th class="text-right py-2">Tiendas</th>
+                                        <th class="text-right py-2">Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="states-table">
+                                    <!-- Will be populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global variables
+        let monthlyData = {};
+        let combinedData = [];
+        let geojsonData = null;
+        let currentMonth = 'combined';
+        let currentMetric = 'var_ventas';
+        let currentView = 'map';
+        let months = [];
+        let files = [];
+        let map = null;
+        let geojsonLayer = null;
+        let markers = L.layerGroup();
+        let formatChart = null;
+        let regionChart = null;
+        let trendChart = null;
+        
+        // DOM elements
+        const csvFileInput = document.getElementById('csv-file');
+        const geojsonFileInput = document.getElementById('geojson-file');
+        const filesInfo = document.getElementById('files-info');
+        const filesList = document.getElementById('files-list');
+        const errorMessage = document.getElementById('error-message');
+        const loading = document.getElementById('loading');
+        const dashboardContent = document.getElementById('dashboard-content');
+        const monthSelect = document.getElementById('month-select');
+        const metricSelect = document.getElementById('metric-select');
+        const viewSelect = document.getElementById('view-select');
+        const mapTitle = document.getElementById('map-title');
+        const generalStats = document.getElementById('general-stats');
+        const topPerformersTable = document.getElementById('top-performers-table');
+        const bottomPerformersTable = document.getElementById('bottom-performers-table');
+        const statesTable = document.getElementById('states-table');
+        const topTab = document.getElementById('top-tab');
+        const bottomTab = document.getElementById('bottom-tab');
+        const topPerformers = document.getElementById('top-performers');
+        const bottomPerformers = document.getElementById('bottom-performers');
+        
+        // Initialize map
+        function initMap() {
+            if (map) {
+                map.remove();
+            }
+            
+            map = L.map('map').setView([23.6345, -102.5528], 5);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            
+            markers = L.layerGroup().addTo(map);
+        }
+        
+        // Parse CSV files
+        csvFileInput.addEventListener('change', function(event) {
+            const uploadedFiles = Array.from(event.target.files);
+            files = uploadedFiles;
+            
+            if (files.length === 0) return;
+            
+            // Show files info
+            filesInfo.classList.remove('hidden');
+            filesList.innerHTML = '';
+            files.forEach(file => {
+                const li = document.createElement('li');
+                li.textContent = file.name;
+                filesList.appendChild(li);
+            });
+            
+            // Reset data
+            monthlyData = {};
+            combinedData = [];
+            months = [];
+            
+            // Show loading indicator
+            loading.classList.remove('hidden');
+            dashboardContent.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            
+            // Process each file
+            Promise.all(files.map(file => {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        try {
+                            const csvData = e.target.result;
+                            
+                            Papa.parse(csvData, {
+                                header: true,
+                                dynamicTyping: true,
+                                skipEmptyLines: true,
+                                complete: function(results) {
+                                    // Extract month from filename
+                                    let month = 'Unknown';
+                                    if (file.name.includes('Ene')) month = 'Enero';
+                                    else if (file.name.includes('Feb')) month = 'Febrero';
+                                    else if (file.name.includes('Mar')) month = 'Marzo';
+                                    else if (file.name.includes('Abr')) month = 'Abril';
+                                    else if (file.name.includes('May')) month = 'Mayo';
+                                    else if (file.name.includes('Jun')) month = 'Junio';
+                                    else if (file.name.includes('Jul')) month = 'Julio';
+                                    else if (file.name.includes('Ago')) month = 'Agosto';
+                                    else if (file.name.includes('Sep')) month = 'Septiembre';
+                                    else if (file.name.includes('Oct')) month = 'Octubre';
+                                    else if (file.name.includes('Nov')) month = 'Noviembre';
+                                    else if (file.name.includes('Dic')) month = 'Diciembre';
+                                    
+                                    if (!months.includes(month)) {
+                                        months.push(month);
+                                    }
+                                    
+                                    // Standardize column names
+                                    const data = results.data.map(row => {
+                                        const newRow = {...row, month};
+                                        
+                                        // Process sales variation
+                                        if ('$ Crec% MT 2025 vs 2024' in row) {
+                                            const value = row['$ Crec% MT 2025 vs 2024'];
+                                            newRow['var_ventas'] = parsePercentage(value);
+                                        } else if ('Venta Neta MT 2024 vs 2023' in row) {
+                                            const value = row['Venta Neta MT 2024 vs 2023'];
+                                            newRow['var_ventas'] = parsePercentage(value);
+                                        }
+                                        
+                                        // Process orders variation
+                                        if ('Ordenes Crec% MT 2025 vs 2024' in row) {
+                                            const value = row['Ordenes Crec% MT 2025 vs 2024'];
+                                            newRow['var_ov'] = parsePercentage(value);
+                                        } else if ('OV MT 2024 vs 2023' in row) {
+                                            const value = row['OV MT 2024 vs 2023'];
+                                            newRow['var_ov'] = parsePercentage(value);
+                                        }
+                                        
+                                        // Process ticket variation
+                                        if ('Ticket Crec% MT 2025 vs 2024' in row) {
+                                            const value = row['Ticket Crec% MT 2025 vs 2024'];
+                                            newRow['var_ticket'] = parsePercentage(value);
+                                        } else if ('Ticket MT 2024 vs 2023' in row) {
+                                            const value = row['Ticket MT 2024 vs 2023'];
+                                            newRow['var_ticket'] = parsePercentage(value);
+                                        }
+                                        
+                                        return newRow;
+                                    });
+                                    
+                                    // Store monthly data
+                                    monthlyData[month] = data;
+                                    
+                                    // Add to combined data
+                                    combinedData = combinedData.concat(data);
+                                    
+                                    resolve();
+                                },
+                                error: function(error) {
+                                    reject(error);
+                                }
+                            });
+                        } catch (error) {
+                            reject(error);
+                        }
+                    };
+                    
+                    reader.onerror = function() {
+                        reject(new Error('Error reading file'));
+                    };
+                    
+                    reader.readAsText(file);
+                });
+            }))
+            .then(() => {
+                // Update months select
+                monthSelect.innerHTML = '';
+                months.forEach(month => {
+                    const option = document.createElement('option');
+                    option.value = month;
+                    option.textContent = month;
+                    monthSelect.appendChild(option);
+                });
+                
+                // Add combined option
+                const combinedOption = document.createElement('option');
+                combinedOption.value = 'combined';
+                combinedOption.textContent = 'Todos los Meses';
+                monthSelect.appendChild(combinedOption);
+                monthSelect.value = 'combined';
+                
+                // Hide loading, show dashboard
+                loading.classList.add('hidden');
+                dashboardContent.classList.remove('hidden');
+                
+                // Initialize map
+                initMap();
+                
+                // Update dashboard
+                updateDashboard();
+            })
+            .catch(error => {
+                loading.classList.add('hidden');
+                errorMessage.classList.remove('hidden');
+                errorMessage.textContent = `Error: ${error.message}`;
+            });
+        });
+        
+        // Load GeoJSON
+        geojsonFileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            
+            if (!file) return;
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                try {
+                    geojsonData = JSON.parse(e.target.result);
+                    
+                    // Update map if dashboard is already visible
+                    if (!dashboardContent.classList.contains('hidden')) {
+                        updateMap();
+                    }
+                } catch (error) {
+                    errorMessage.classList.remove('hidden');
+                    errorMessage.textContent = 'Error parsing GeoJSON file';
+                }
+            };
+            
+            reader.onerror = function() {
+                errorMessage.classList.remove('hidden');
+                errorMessage.textContent = 'Error reading GeoJSON file';
+            };
+            
+            reader.readAsText(file);
+        });
+        
+        // Handle control changes
+        monthSelect.addEventListener('change', function() {
+            currentMonth = this.value;
+            updateDashboard();
+        });
+        
+        metricSelect.addEventListener('change', function() {
+            currentMetric = this.value;
+            updateDashboard();
+        });
+        
+        viewSelect.addEventListener('change', function() {
+            currentView = this.value;
+            updateDashboard();
+        });
+        
+        // Tab switching
+        topTab.addEventListener('click', function() {
+            topPerformers.classList.remove('hidden');
+            bottomPerformers.classList.add('hidden');
+            topTab.classList.add('border-blue-500', 'font-bold');
+            bottomTab.classList.remove('border-blue-500', 'font-bold');
+        });
+        
+        bottomTab.addEventListener('click', function() {
+            bottomPerformers.classList.remove('hidden');
+            topPerformers.classList.add('hidden');
+            bottomTab.classList.add('border-blue-500', 'font-bold');
+            topTab.classList.remove('border-blue-500', 'font-bold');
+        });
+        
+        // Helper function to parse percentage strings
+        function parsePercentage(value) {
+            if (value === null || value === undefined || value === '-') return null;
+            
+            if (typeof value === 'number') return value;
+            
+            try {
+                // Remove percentage sign and convert commas to dots
+                const cleaned = String(value).replace('%', '').replace(',', '.');
+                return parseFloat(cleaned);
+            } catch {
+                return null;
+            }
+        }
+        
+        // Helper function to format percentage values
+        function formatPercentage(value) {
+            if (value === null || value === undefined || isNaN(value)) return 'N/A';
+            return `${value.toFixed(1)}%`;
+        }
+        
+        // Get CSS class for performance values
+        function getPerformanceClass(value) {
+            if (value === null || value === undefined || isNaN(value)) return '';
+            return value >= 0 ? 'positive-value' : 'negative-value';
+        }
+        
+        // Get color for state based on performance
+        function getStateColor(value) {
+            if (value === undefined || value === null || isNaN(value)) {
+                return '#D3D3D3';  // Light gray for no data
+            } else if (value < -10) {
+                return '#FF0000';  // Red for significant decrease
+            } else if (value < 0) {
+                return '#FF8C00';  // Dark orange for slight decrease
+            } else if (value < 5) {
+                return '#FFFF00';  // Yellow for neutral/slight increase
+            } else if (value < 20) {
+                return '#90EE90';  // Light green for good increase
+            } else {
+                return '#008000';  // Dark green for excellent increase
+            }
+        }
+        
+        // Get current data based on selection
+        function getCurrentData() {
+            if (currentMonth === 'combined') {
+                return combinedData;
+            } else if (monthlyData[currentMonth]) {
+                return monthlyData[currentMonth];
+            }
+            return [];
+        }
+        
+        // Calculate state summaries
+        function getStateSummary(data) {
+            if (data.length === 0) return [];
+            
+            const stateField = data[0].hasOwnProperty('Estado') ? 'Estado' : 'estado';
+            const stateGroups = {};
+            
+            data.forEach(row => {
+                const state = row[stateField];
+                if (!state) return;
+                
+                if (!stateGroups[state]) {
+                    stateGroups[state] = {
+                        stores: [],
+                        var_ventas: [],
+                        var_ov: [],
+                        var_ticket: []
+                    };
+                }
+                
+                stateGroups[state].stores.push(row);
+                
+                if (row.var_ventas !== null && !isNaN(row.var_ventas)) {
+                    stateGroups[state].var_ventas.push(row.var_ventas);
+                }
+                
+                if (row.var_ov !== null && !isNaN(row.var_ov)) {
+                    stateGroups[state].var_ov.push(row.var_ov);
+                }
+                
+                if (row.var_ticket !== null && !isNaN(row.var_ticket)) {
+                    stateGroups[state].var_ticket.push(row.var_ticket);
+                }
+            });
+            
+            return Object.entries(stateGroups).map(([state, data]) => {
+                return {
+                    estado: state,
+                    var_ventas: calculateAverage(data.var_ventas),
+                    var_ov: calculateAverage(data.var_ov),
+                    var_ticket: calculateAverage(data.var_ticket),
+                    storeCount: data.stores.length
+                };
+            });
+        }
+        
+        // Calculate format performance
+        function getFormatPerformance(data) {
+            if (data.length === 0) return [];
+            
+            const formatGroups = {};
+            
+            data.forEach(row => {
+                const format = row.Formato;
+                if (!format) return;
+                
+                if (!formatGroups[format]) {
+                    formatGroups[format] = {
+                        stores: [],
+                        var_ventas: [],
+                        var_ov: [],
+                        var_ticket: []
+                    };
+                }
+                
+                formatGroups[format].stores.push(row);
+                
+                if (row.var_ventas !== null && !isNaN(row.var_ventas)) {
+                    formatGroups[format].var_ventas.push(row.var_ventas);
+                }
+                
+                if (row.var_ov !== null && !isNaN(row.var_ov)) {
+                    formatGroups[format].var_ov.push(row.var_ov);
+                }
+                
+                if (row.var_ticket !== null && !isNaN(row.var_ticket)) {
+                    formatGroups[format].var_ticket.push(row.var_ticket);
+                }
+            });
+            
+            return Object.entries(formatGroups).map(([format, data]) => {
+                return {
+                    format: format,
+                    var_ventas: calculateAverage(data.var_ventas),
+                    var_ov: calculateAverage(data.var_ov),
+                    var_ticket: calculateAverage(data.var_ticket),
+                    storeCount: data.stores.length
+                };
+            });
+        }
+        
+        // Calculate region performance
+        function getRegionPerformance(data) {
+            if (data.length === 0) return [];
+            
+            const regionGroups = {};
+            
+            data.forEach(row => {
+                const region = row.Zona;
+                if (!region) return;
+                
+                if (!regionGroups[region]) {
+                    regionGroups[region] = {
+                        stores: [],
+                        var_ventas: [],
+                        var_ov: [],
+                        var_ticket: []
+                    };
+                }
+                
+                regionGroups[region].stores.push(row);
+                
+                if (row.var_ventas !== null && !isNaN(row.var_ventas)) {
+                    regionGroups[region].var_ventas.push(row.var_ventas);
+                }
+                
+                if (row.var_ov !== null && !isNaN(row.var_ov)) {
+                    regionGroups[region].var_ov.push(row.var_ov);
+                }
+                
+                if (row.var_ticket !== null && !isNaN(row.var_ticket)) {
+                    regionGroups[region].var_ticket.push(row.var_ticket);
+                }
+            });
+            
+            return Object.entries(regionGroups).map(([region, data]) => {
+                return {
+                    region: region,
+                    var_ventas: calculateAverage(data.var_ventas),
+                    var_ov: calculateAverage(data.var_ov),
+                    var_ticket: calculateAverage(data.var_ticket),
+                    storeCount: data.stores.length
+                };
+            });
+        }
+        
+        // Calculate top performers
+        function getTopPerformers(data, metric, limit = 5) {
+            if (data.length === 0) return [];
+            
+            // Filter out entries with null or NaN values for the metric
+            const filteredData = data.filter(item => 
+                item[metric] !== null && 
+                !isNaN(item[metric])
+            );
+            
+            // Sort by the metric in descending order
+            return filteredData.sort((a, b) => b[metric] - a[metric]).slice(0, limit);
+        }
+        
+        // Calculate bottom performers
+        function getBottomPerformers(data, metric, limit = 5) {
+            if (data.length === 0) return [];
+            
+            // Filter out entries with null or NaN values for the metric
+            const filteredData = data.filter(item => 
+                item[metric] !== null && 
+                !isNaN(item[metric])
+            );
+            
+            // Sort by the metric in ascending order
+            return filteredData.sort((a, b) => a[metric] - b[metric]).slice(0, limit);
+        }
+        
+        // Calculate average of an array of numbers
+        function calculateAverage(values) {
+            if (!values || values.length === 0) return 0;
+            const sum = values.reduce((a, b) => a + b, 0);
+            return sum / values.length;
+        }
+        
+        // Calculate average metrics
+        function getAverageMetrics(data) {
+            return {
+                var_ventas: calculateAverage(data.map(item => item.var_ventas).filter(v => v !== null && !isNaN(v))),
+                var_ov: calculateAverage(data.map(item => item.var_ov).filter(v => v !== null && !isNaN(v))),
+                var_ticket: calculateAverage(data.map(item => item.var_ticket).filter(v => v !== null && !isNaN(v)))
+            };
+        }
+        
+        // Calculate trend data
+        function getTrendData() {
+            if (Object.keys(monthlyData).length === 0) return [];
+            
+            return months.map(month => {
+                const monthData = monthlyData[month] || [];
+                
+                return {
+                    month,
+                    var_ventas: calculateAverage(monthData.map(item => item.var_ventas).filter(v => v !== null && !isNaN(v))),
+                    var_ov: calculateAverage(monthData.map(item => item.var_ov).filter(v => v !== null && !isNaN(v))),
+                    var_ticket: calculateAverage(monthData.map(item => item.var_ticket).filter(v => v !== null && !isNaN(v)))
+                };
+            });
+        }
+        
+        // Update map
+        function updateMap() {
+            // Clear existing data
+            if (geojsonLayer) {
+                map.removeLayer(geojsonLayer);
+            }
+            markers.clearLayers();
+            
+            // Skip if no geojson data
+            if (!geojsonData) {
+                return;
+            }
+            
+            const data = getCurrentData();
+            const stateSummary = getStateSummary(data);
+            
+            // Add GeoJSON with styling
+            geojsonLayer = L.geoJSON(geojsonData, {
+                style: function(feature) {
+                    // Get state name from feature
+                    let stateName = null;
+                    if (feature.properties) {
+                        // Try different property names
+                        for (const propName of ['sta_name', 'name', 'NAME_1', 'NAME', 'state', 'Estado']) {
+                            if (propName in feature.properties && feature.properties[propName] !== null) {
+                                stateName = feature.properties[propName];
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (!stateName) {
+                        return {
+                            fillColor: '#D3D3D3',
+                            color: '#000000',
+                            weight: 1,
+                            fillOpacity: 0.5
+                        };
+                    }
+                    
+                    // Safely convert and clean state name
+                    stateName = typeof stateName === 'string' ? stateName.trim() : String(stateName);
+                    
+                    // Find matching state in summary data - with more flexible matching
+                    const stateData = stateSummary.find(state => {
+                        const summaryStateName = typeof state.estado === 'string' ? state.estado.trim().toLowerCase() : String(state.estado).toLowerCase();
+                        const featureStateName = stateName.toLowerCase();
+    
+                        return summaryStateName === featureStateName || 
+                            featureStateName.startsWith(summaryStateName) || 
+                            summaryStateName.startsWith(featureStateName);
+                    });
+                    
+                    if (!stateData) {
+                        return {
+                            fillColor: '#D3D3D3',
+                            color: '#000000',
+                            weight: 1,
+                            fillOpacity: 0.5
+                        };
+                    }
+                    
+                    // Get color based on performance
+                    const color = getStateColor(stateData[currentMetric]);
+                    
+                    return {
+                        fillColor: color,
+                        color: '#000000',
+                        weight: 1,
+                        fillOpacity: 0.7
+                    };
+                }
+            }).addTo(map);
+            
+            // Add store markers
+            if (currentView === 'map') {
+                data.forEach(store => {
+                    if (store.latitud && store.longitud && !isNaN(store.latitud) && !isNaN(store.longitud)) {
+                        const marker = L.marker([store.latitud, store.longitud]);
+                        
+                        // Create popup content
+                        const popupContent = `
+                            <div>
+                                <h3 style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">${store.Sucursal}</h3>
+                                <p><strong>Formato:</strong> ${store.Formato || 'N/A'}</p>
+                                <p><strong>Zona:</strong> ${store.Zona || 'N/A'}</p>
+                                <p><strong>Estado:</strong> ${store.Estado || store.estado || 'N/A'}</p>
+                                <hr style="margin: 5px 0;">
+                                <p><strong>Variación Ventas:</strong> ${formatPercentage(store.var_ventas)}</p>
+                                <p><strong>Variación OV:</strong> ${formatPercentage(store.var_ov)}</p>
+                                <p><strong>Variación Ticket:</strong> ${formatPercentage(store.var_ticket)}</p>
+                            </div>
+                        `;
+                        
+                        marker.bindPopup(popupContent);
+                        markers.addLayer(marker);
+                    }
+                });
+            }
+        }
+        
+        // Update charts
+        function updateCharts() {
+            const data = getCurrentData();
+            const formatPerformance = getFormatPerformance(data);
+            const regionPerformance = getRegionPerformance(data);
+            const trendData = getTrendData();
+            
+            // Update format chart
+            if (formatChart) {
+                formatChart.destroy();
+            }
+            
+            const formatCtx = document.getElementById('format-chart').getContext('2d');
+            formatChart = new Chart(formatCtx, {
+                type: 'bar',
+                data: {
+                    labels: formatPerformance.map(item => item.format),
+                    datasets: [{
+                        label: currentMetric === 'var_ventas' ? 'Variación Ventas' : 
+                               currentMetric === 'var_ov' ? 'Variación Órdenes' : 'Variación Ticket',
+                        data: formatPerformance.map(item => item[currentMetric]),
+                        backgroundColor: '#8884d8'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw.toFixed(2) + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Update region chart
+            if (regionChart) {
+                regionChart.destroy();
+            }
+            
+            const regionCtx = document.getElementById('region-chart').getContext('2d');
+            regionChart = new Chart(regionCtx, {
+                type: 'bar',
+                data: {
+                    labels: regionPerformance.map(item => item.region),
+                    datasets: [{
+                        label: currentMetric === 'var_ventas' ? 'Variación Ventas' : 
+                               currentMetric === 'var_ov' ? 'Variación Órdenes' : 'Variación Ticket',
+                        data: regionPerformance.map(item => item[currentMetric]),
+                        backgroundColor: '#82ca9d'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw.toFixed(2) + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Update trend chart
+            if (trendChart) {
+                trendChart.destroy();
+            }
+            
+            const trendCtx = document.getElementById('trend-chart').getContext('2d');
+            trendChart = new Chart(trendCtx, {
+                type: 'line',
+                data: {
+                    labels: trendData.map(item => item.month),
+                    datasets: [{
+                        label: currentMetric === 'var_ventas' ? 'Variación Ventas' : 
+                               currentMetric === 'var_ov' ? 'Variación Órdenes' : 'Variación Ticket',
+                        data: trendData.map(item => item[currentMetric]),
+                        borderColor: '#8884d8',
+                        backgroundColor: 'rgba(136, 132, 216, 0.2)',
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw.toFixed(2) + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Update tables
+        function updateTables() {
+            const data = getCurrentData();
+            const averageMetrics = getAverageMetrics(data);
+            const topPerformers = getTopPerformers(data, currentMetric);
+            const bottomPerformers = getBottomPerformers(data, currentMetric);
+            const stateSummary = getStateSummary(data);
+            
+            // Update general stats
+            generalStats.innerHTML = `
+                <tr class="border-b">
+                    <td class="py-2 font-bold">Variación Ventas</td>
+                    <td class="py-2 text-right ${getPerformanceClass(averageMetrics.var_ventas)}">
+                        ${formatPercentage(averageMetrics.var_ventas)}
+                    </td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2 font-bold">Variación Órdenes</td>
+                    <td class="py-2 text-right ${getPerformanceClass(averageMetrics.var_ov)}">
+                        ${formatPercentage(averageMetrics.var_ov)}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-2 font-bold">Variación Ticket</td>
+                    <td class="py-2 text-right ${getPerformanceClass(averageMetrics.var_ticket)}">
+                        ${formatPercentage(averageMetrics.var_ticket)}
+                    </td>
+                </tr>
+            `;
+            
+            // Update top performers
+            topPerformersTable.innerHTML = '';
+            topPerformers.forEach(store => {
+                const row = document.createElement('tr');
+                row.className = 'border-b';
+                row.innerHTML = `
+                    <td class="py-2">${store.Sucursal}</td>
+                    <td class="py-2">${store.Formato || 'N/A'}</td>
+                    <td class="py-2 text-right text-green-600 font-bold">
+                        ${formatPercentage(store[currentMetric])}
+                    </td>
+                `;
+                topPerformersTable.appendChild(row);
+            });
+            
+            // Update bottom performers
+            bottomPerformersTable.innerHTML = '';
+            bottomPerformers.forEach(store => {
+                const row = document.createElement('tr');
+                row.className = 'border-b';
+                row.innerHTML = `
+                    <td class="py-2">${store.Sucursal}</td>
+                    <td class="py-2">${store.Formato || 'N/A'}</td>
+                    <td class="py-2 text-right text-red-600 font-bold">
+                        ${formatPercentage(store[currentMetric])}
+                    </td>
+                `;
+                bottomPerformersTable.appendChild(row);
+            });
+            
+            // Update states table
+            statesTable.innerHTML = '';
+            stateSummary.sort((a, b) => b[currentMetric] - a[currentMetric]).forEach(state => {
+                const row = document.createElement('tr');
+                row.className = 'border-b';
+                row.innerHTML = `
+                    <td class="py-2">${state.estado}</td>
+                    <td class="py-2 text-right">${state.storeCount}</td>
+                    <td class="py-2 text-right ${getPerformanceClass(state[currentMetric])}">
+                        ${formatPercentage(state[currentMetric])}
+                    </td>
+                `;
+                statesTable.appendChild(row);
+            });
+        }
+        
+        // Update dashboard
+        function updateDashboard() {
+            // Update map title
+            mapTitle.textContent = `${currentView === 'heatmap' ? 'Mapa de Calor' : 'Mapa de Desempeño'} - ${currentMonth === 'combined' ? 'Todos los Meses' : currentMonth}`;
+            
+            // Update map
+            updateMap();
+            
+            // Update charts
+            updateCharts();
+            
+            // Update tables
+            updateTables();
+        }
+        
+        // Initialize map on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+        });
+    </script>
+</body>
+</html>
